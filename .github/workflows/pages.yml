@@ -45,7 +45,7 @@ jobs:
           
       # 添加上传构建产物步骤（显式依赖）
       - name: 上传构建产物 (Artifact)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v1
         with:
           name: pages-artifact
           path: _site
