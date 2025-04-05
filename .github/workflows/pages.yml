@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 检出代码
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # 确保获取最新的数据
           ref: main
@@ -43,8 +43,17 @@ jobs:
           # 添加重定向到index.html
           echo '<meta http-equiv="refresh" content="0; url=./index.html">' > _site/index.html
           
-      - name: 上传构建结果
+      # 添加上传构建产物步骤（显式依赖）
+      - name: 上传构建产物 (Artifact)
+        uses: actions/upload-artifact@v3
+        with:
+          name: pages-artifact
+          path: _site
+          
+      - name: 上传Pages构建结果
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: _site
         
       - name: 部署到GitHub Pages
         id: deployment
