@@ -3,72 +3,857 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>节点订阅信息将在首次运行后显示</title>
+    <title>Clash/V2Ray 免费节点订阅</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --success-color: #198754;
+            --info-color: #0dcaf0;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
         }
-        .container {
-            background: white;
-            padding: 30px;
+        
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+        
+        .card-header {
+            font-weight: bold;
+            background-color: rgba(13, 110, 253, 0.05);
+            border-radius: 10px 10px 0 0 !important;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .badge {
+            margin-right: 5px;
+            padding: 0.5em 0.8em;
+            font-weight: 500;
+            border-radius: 6px;
+        }
+        
+        .stats-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-top: 3px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .stats-card:hover {
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        
+        .copy-btn {
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .copy-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            font-weight: 600;
+            color: var(--dark-color);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: var(--warning-color);
+            bottom: -2px;
+            left: 0;
+        }
+        
+        .highlight-card {
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-card:hover {
+            border-left-color: var(--warning-color);
+        }
+        
+        footer {
+            margin-top: 70px;
+            padding: 30px 0;
+            background-color: #fff;
+            border-top: 1px solid #e9ecef;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .social-icons {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: all 0.3s ease;
+            color: var(--secondary-color);
+        }
+        
+        .social-icons:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(13, 110, 253, 0.1);
+            font-weight: 500;
+        }
+        
+        .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+        }
+        
+        .alert {
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .alert-info {
+            background-color: rgba(13, 202, 240, 0.1);
+            color: #087990;
+        }
+        
+        .node-info-section {
+            background-color: rgba(248, 249, 250, 0.7);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .subscription-button {
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .subscription-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+        
+        .input-group {
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .input-group .form-control {
+            border-right: none;
+        }
+        
+        .top-banner {
+            background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+            color: white;
+            padding: 15px 0;
+            margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            max-width: 600px;
         }
-        h1 {
-            color: #0d6efd;
-            margin-bottom: 20px;
+        
+        .stats-icon {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
         }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
+        
+        .animated-hover {
+            transition: all 0.3s ease;
         }
-        .loading {
-            width: 50px;
-            height: 50px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #0d6efd;
-            border-radius: 50%;
-            animation: spin 2s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .btn {
-            display: inline-block;
-            background-color: #0d6efd;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #0b5ed7;
+        
+        .animated-hover:hover {
+            transform: translateY(-3px);
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>免费节点订阅集合</h1>
-        <div class="loading"></div>
-        <p>节点订阅信息将在GitHub Actions首次运行后显示。</p>
-        <p>这个页面会在爬虫完成第一次运行后自动更新，包含最新的订阅链接和节点信息。</p>
-        <p>如需立即获取数据，请手动触发GitHub Actions工作流。</p>
-        <a href="https://github.com/" class="btn">返回仓库</a>
+<body class="animate__animated animate__fadeIn">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-globe2 me-2"></i> 
+                <span>Clash/V2Ray 免费节点订阅</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#top">
+                            <i class="bi bi-house-door-fill me-1"></i> 首页
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#freev2">
+                            <i class="bi bi-star-fill me-1"></i> FreeV2.net
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bestclash">
+                            <i class="bi bi-star-fill me-1"></i> BestClash
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shaoyou">
+                            <i class="bi bi-clock-history me-1"></i> 周润发公益v2ray
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ripao">
+                            <i class="bi bi-bookmark-star-fill me-1"></i> 日日更新节点
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#v2rayc">
+                            <i class="bi bi-lightning-charge-fill me-1"></i> V2rayc订阅
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#datiya">
+                            <i class="bi bi-calendar-date me-1"></i> 按日期查看
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="top-banner p-4 animate__animated animate__fadeInDown">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2><i class="bi bi-lightning-charge-fill me-2"></i> 免费节点集合</h2>
+                    <p class="mb-0">汇集多个来源的免费Clash/V2Ray节点，定时更新</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0">
+                        <i class="bi bi-clock-history me-1"></i> 
+                        更新时间: 2025-04-05 02:44:49
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="stats-card animate__animated animate__fadeInLeft">
+                    <div class="text-center stats-icon">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h5 class="text-center mb-3">日期统计</h5>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-primary rounded-pill fs-6">4 个日期</span>
+                        </div>
+                        <p class="mb-1">最早日期: <span class="badge bg-secondary">bestclash</span></p>
+                        <p>最新日期: <span class="badge bg-secondary">v2rayc</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stats-card animate__animated animate__fadeInUp">
+                    <div class="text-center stats-icon">
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <h5 class="text-center mb-3">订阅统计</h5>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-primary rounded-pill fs-6">10 个链接</span>
+                        </div>
+                        <p class="mb-1">Clash订阅: <span class="badge bg-success">5</span></p>
+                        <p>V2Ray订阅: <span class="badge bg-info">5</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stats-card animate__animated animate__fadeInRight">
+                    <div class="text-center stats-icon">
+                        <i class="bi bi-hdd-network"></i>
+                    </div>
+                    <h5 class="text-center mb-3">节点统计</h5>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-primary rounded-pill fs-6">0 个节点</span>
+                        </div>
+                        <p class="mb-1">平均每日: <span class="badge bg-warning text-dark">0 个</span></p>
+                        <p>更新频率: <span class="badge bg-secondary">每日更新</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FreeV2.net 订阅部分 -->
+        <h3 id="freev2" class="section-title animate__animated animate__fadeIn">
+            <i class="bi bi-star-fill me-2 text-warning"></i> FreeV2.net 最新订阅
+        </h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="card highlight-card animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center">
+                            <i class="bi bi-lightning-charge me-2 text-warning"></i> 
+                            FreeV2.net 免费节点
+                        </h5>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="bi bi-clock me-1"></i>
+                                更新时间: 2025-04-05 10:19:13
+                            </small>
+                        </p>
+                        
+                        <div class="mb-4">
+                            <h6 class="mb-3"><i class="bi bi-link-45deg me-1"></i> 订阅链接:</h6>
+                            <div class="input-group mb-2">
+                                <input type="text" id="freev2-link" class="form-control" value="https://bazmaf.503403.xyz" readonly>
+                                <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#freev2-link">
+                                    <i class="bi bi-clipboard"></i> 复制
+                                </button>
+                            </div>
+                            <small class="text-muted">复制后可直接导入到Clash/V2Ray客户端使用</small>
+                        </div>
+                        
+                        <div class="alert alert-light node-info-section">
+                            <p class="mb-1"><i class="bi bi-info-circle me-1 text-info"></i> 网站信息:</p>
+                            <p class="mb-3">为了避免乱码和不必要的信息，此处已省略网站信息</p>
+                            <a href="https://b.freev2.net/" target="_blank" class="btn btn-outline-primary animated-hover">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> 访问FreeV2.net
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BestClash 订阅部分 -->
+        <h3 id="bestclash" class="section-title animate__animated animate__fadeIn">
+            <i class="bi bi-star-fill me-2 text-warning"></i> BestClash 最新订阅
+        </h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="card highlight-card animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center">
+                            <i class="bi bi-star-fill me-2 text-warning"></i> 
+                            BestClash 免费节点
+                        </h5>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="bi bi-clock me-1"></i>
+                                更新时间: 2025-04-05 10:14:10
+                            </small>
+                        </p>
+                        
+                        <div class="mb-4">
+                            <h6 class="mb-3"><i class="bi bi-link-45deg me-1"></i> 订阅链接:</h6>
+                            <div class="input-group mb-2">
+                                <input type="text" id="bestclash-link" class="form-control" value="https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml" readonly>
+                                <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#bestclash-link">
+                                    <i class="bi bi-clipboard"></i> 复制
+                                </button>
+                            </div>
+                            <small class="text-muted">复制后可直接导入到Clash/V2Ray客户端使用</small>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h6 class="mb-3"><i class="bi bi-link-45deg me-1"></i> 国内镜像链接:</h6>
+                            <div class="input-group mb-2">
+                                <input type="text" id="bestclash-mirror-link" class="form-control" value="https://ghfile.geekertao.top/https://github.com/PuddinCat/BestClash/blob/main/proxies.yaml" readonly>
+                                <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#bestclash-mirror-link">
+                                    <i class="bi bi-clipboard"></i> 复制
+                                </button>
+                            </div>
+                            <small class="text-muted">国内用户推荐使用此链接</small>
+                        </div>
+                        
+                        <div class="alert alert-light node-info-section">
+                            <p class="mb-1"><i class="bi bi-info-circle me-1 text-info"></i> 网站信息:</p>
+                            <p class="mb-3">免费Clash代理！自动从网上爬取最快的代理，每30分钟更新！</p>
+                            <a href="https://github.com/PuddinCat/BestClash" target="_blank" class="btn btn-outline-primary animated-hover">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> 访问BestClash
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 周润发公益v2ray节点订阅部分 -->
+        <h3 id="shaoyou" class="section-title animate__animated animate__fadeIn">
+            <i class="bi bi-clock-history me-2 text-info"></i> 周润发公益v2ray节点订阅
+        </h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="card highlight-card animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center">
+                            <i class="bi bi-clock-history me-2 text-info"></i> 
+                            周润发公益v2ray节点
+                        </h5>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="bi bi-clock me-1"></i>
+                                更新时间: 2025-04-05 09:09:13 (每2小时更新一次)
+                            </small>
+                        </p>
+                        
+                        <div class="mb-4">
+                            <h6 class="mb-3"><i class="bi bi-link-45deg me-1"></i> yaml格式订阅链接:</h6>
+                            <div class="input-group mb-2">
+                                <input type="text" id="shaoyou-yaml-link" class="form-control" value="https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml" readonly>
+                                <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#shaoyou-yaml-link">
+                                    <i class="bi bi-clipboard"></i> 复制
+                                </button>
+                            </div>
+                            <small class="text-muted">适用于Clash/Clash Verge等客户端</small>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h6 class="mb-3"><i class="bi bi-link-45deg me-1"></i> base64格式订阅链接:</h6>
+                            <div class="input-group mb-2">
+                                <input type="text" id="shaoyou-base64-link" class="form-control" value="https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt" readonly>
+                                <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#shaoyou-base64-link">
+                                    <i class="bi bi-clipboard"></i> 复制
+                                </button>
+                            </div>
+                            <small class="text-muted">适用于V2rayN/V2rayNG等客户端</small>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h6 class="mb-3"><i class="bi bi-link-45deg me-1"></i> mihomo格式订阅链接:</h6>
+                            <div class="input-group mb-2">
+                                <input type="text" id="shaoyou-mihomo-link" class="form-control" value="https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml" readonly>
+                                <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#shaoyou-mihomo-link">
+                                    <i class="bi bi-clipboard"></i> 复制
+                                </button>
+                            </div>
+                            <small class="text-muted">适用于带分流规则的Clash客户端</small>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h6 class="mb-3"><i class="bi bi-link-45deg me-1"></i> 国内镜像链接:</h6>
+                            <div class="input-group mb-2">
+                                <input type="text" id="shaoyou-no-proxy-link" class="form-control" value="暂无镜像链接" readonly>
+                                <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#shaoyou-no-proxy-link">
+                                    <i class="bi bi-clipboard"></i> 复制
+                                </button>
+                            </div>
+                            <small class="text-muted">国内用户推荐使用此无需代理的更新链接</small>
+                        </div>
+                        
+                        <div class="alert alert-light node-info-section">
+                            <p class="mb-1"><i class="bi bi-info-circle me-1 text-info"></i> 特别说明:</p>
+                            <p class="mb-3">每2小时更新一次，提供免费v2ray节点订阅</p>
+                            <a href="https://github.com/shaoyouvip/free" target="_blank" class="btn btn-outline-primary animated-hover">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> 访问节点仓库
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shadowrocket 共享账号部分 -->
+        <h3 id="shadowrocket" class="section-title animate__animated animate__fadeIn">
+            <i class="bi bi-apple me-2 text-danger"></i> Shadowrocket 共享账号
+        </h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="card highlight-card animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center">
+                            <i class="bi bi-rocket me-2 text-danger"></i> 
+                            Shadowrocket (小火箭) 免费共享Apple ID
+                        </h5>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="bi bi-info-circle me-1"></i>
+                                实时更新的Apple账号，用于免费下载小火箭
+                            </small>
+                        </p>
+                        
+                        <div class="alert alert-warning">
+                            <p class="mb-1"><i class="bi bi-exclamation-triangle me-1"></i> <strong>使用注意事项:</strong></p>
+                            <ol class="mb-0">
+                                <li>打开iPhone/iPad的蓝色 AppStore 软件（请不要打开设置）</li>
+                                <li>右上角点击 个人头像 进入账户，下拉到最底找到并点击 退出登录</li>
+                                <li>使用下方获取的共享账号和密码登录</li>
+                                <li>点击登录，提示 Apple id安全，请点击 其他选项-不升级</li>
+                                <li>搜索 Shadowrocket 下载，或者其他你想下载的软件</li>
+                                <li>用完务必 退出登录，避免你的手机被锁</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <a href="https://proxy4all.github.io/FreeShadowrocket/" target="_blank" class="btn btn-danger btn-lg animated-hover">
+                                <i class="bi bi-rocket me-2"></i> 获取免费小火箭共享账号
+                            </a>
+                            <a href="https://ids.ailiao.eu/" target="_blank" class="btn btn-secondary btn-lg animated-hover">
+                                <i class="bi bi-person-badge me-2"></i> 备选账号获取通道
+                            </a>
+                        </div>
+                        
+                        <div class="alert alert-light mt-4 node-info-section">
+                            <p class="mb-1"><i class="bi bi-info-circle me-1 text-info"></i> 说明:</p>
+                            <p class="mb-3">为保证账号安全性和可用性，我们不直接显示账号信息，请通过上方按钮跳转到官方站点获取最新账号。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 日日更新节点订阅部分 -->
+        <h3 id="ripao" class="section-title animate__animated animate__fadeIn">
+            <i class="bi bi-bookmark-star-fill me-2 text-danger"></i> 日日更新节点永久订阅
+        </h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="card highlight-card animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center">
+                            <i class="bi bi-calendar2-check me-2 text-danger"></i> 
+                            日日更新节点永久订阅
+                            <span class="badge bg-danger ms-2">永久地址</span>
+                        </h5>
+                        <p class="card-text">
+                            永久固定的订阅地址，国内优先使用镜像订阅（镜像不稳定时可切换直连）
+                        </p>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <div class="card sub-card">
+                                    <div class="card-header">
+                                        <i class="bi bi-intersect me-2"></i> Clash 订阅
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" id="ripao-clash-link" class="form-control" value="https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash" readonly>
+                                            <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#ripao-clash-link">
+                                                <i class="bi bi-clipboard"></i> 复制
+                                            </button>
+                                        </div>
+                                        <p class="text-muted small mb-2">国内镜像链接：</p>
+                                        <div class="input-group">
+                                            <input type="text" id="ripao-clash-mirror" class="form-control" value="https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash" readonly>
+                                            <button class="btn btn-outline-success copy-btn" data-clipboard-target="#ripao-clash-mirror">
+                                                <i class="bi bi-clipboard"></i> 复制
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card sub-card">
+                                    <div class="card-header">
+                                        <i class="bi bi-hdd-network me-2"></i> 通用/V2ray 订阅
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" id="ripao-v2ray-link" class="form-control" value="https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub" readonly>
+                                            <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#ripao-v2ray-link">
+                                                <i class="bi bi-clipboard"></i> 复制
+                                            </button>
+                                        </div>
+                                        <p class="text-muted small mb-2">国内镜像链接：</p>
+                                        <div class="input-group">
+                                            <input type="text" id="ripao-v2ray-mirror" class="form-control" value="https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub" readonly>
+                                            <button class="btn btn-outline-success copy-btn" data-clipboard-target="#ripao-v2ray-mirror">
+                                                <i class="bi bi-clipboard"></i> 复制
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted small">
+                                <i class="bi bi-info-circle me-1"></i> 
+                                更新频率：日更新
+                            </span>
+                            <a href="https://github.com/ripaojiedian/freenode" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-github me-1"></i> 访问源码库
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- V2rayc.github.io 订阅部分 -->
+        <h3 id="v2rayc" class="section-title animate__animated animate__fadeIn">
+            <i class="bi bi-lightning-charge-fill me-2 text-primary"></i> V2rayc.github.io 节点订阅
+        </h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="card highlight-card animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center">
+                            <i class="bi bi-globe me-2 text-primary"></i> 
+                            V2rayc免费节点订阅
+                            <span class="badge bg-info ms-2">每日更新</span>
+                        </h5>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="bi bi-clock me-1"></i>
+                                更新时间: 2025-04-04 09:23:54
+                            </small>
+                        </p>
+                        
+                        <div class="row mb-4">
+                            <!-- Clash 订阅 -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card sub-card">
+                                    <div class="card-header">
+                                        <i class="bi bi-intersect me-2"></i> Clash 订阅
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list-group">
+
+                                            <div class="list-group-item mb-2">
+                                                <div class="input-group">
+                                                    <input type="text" id="v2rayc-clash-0" class="form-control" value="https://v2rayc.github.io/uploads/2025/04/4-20250404.yaml" readonly>
+                                                    <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#v2rayc-clash-0">
+                                                        <i class="bi bi-clipboard"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item mb-2">
+                                                <div class="input-group">
+                                                    <input type="text" id="v2rayc-clash-1" class="form-control" value="https://v2rayc.github.io/uploads/2025/04/1-20250404.yaml" readonly>
+                                                    <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#v2rayc-clash-1">
+                                                        <i class="bi bi-clipboard"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item mb-2">
+                                                <div class="input-group">
+                                                    <input type="text" id="v2rayc-clash-2" class="form-control" value="https://v2rayc.github.io/uploads/2025/04/0-20250404.yaml" readonly>
+                                                    <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#v2rayc-clash-2">
+                                                        <i class="bi bi-clipboard"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- V2Ray 订阅 -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card sub-card">
+                                    <div class="card-header">
+                                        <i class="bi bi-hdd-network me-2"></i> V2Ray 订阅
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list-group">
+
+                                            <div class="list-group-item mb-2">
+                                                <div class="input-group">
+                                                    <input type="text" id="v2rayc-v2ray-0" class="form-control" value="https://v2rayc.github.io/uploads/2025/04/1-20250404.txt" readonly>
+                                                    <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#v2rayc-v2ray-0">
+                                                        <i class="bi bi-clipboard"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item mb-2">
+                                                <div class="input-group">
+                                                    <input type="text" id="v2rayc-v2ray-1" class="form-control" value="https://v2rayc.github.io/uploads/2025/04/2-20250404.txt" readonly>
+                                                    <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#v2rayc-v2ray-1">
+                                                        <i class="bi bi-clipboard"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="list-group-item mb-2">
+                                                <div class="input-group">
+                                                    <input type="text" id="v2rayc-v2ray-2" class="form-control" value="https://v2rayc.github.io/uploads/2025/04/3-20250404.txt" readonly>
+                                                    <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#v2rayc-v2ray-2">
+                                                        <i class="bi bi-clipboard"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sing-box 订阅 -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card sub-card">
+                                    <div class="card-header">
+                                        <i class="bi bi-box me-2"></i> Sing-box 订阅
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list-group">
+
+                                            <div class="list-group-item mb-2">
+                                                <div class="input-group">
+                                                    <input type="text" id="v2rayc-singbox-0" class="form-control" value="https://v2rayc.github.io/uploads/2025/04/20250404.json" readonly>
+                                                    <button class="btn btn-outline-primary copy-btn" data-clipboard-target="#v2rayc-singbox-0">
+                                                        <i class="bi bi-clipboard"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="text-muted small">
+                <i class="bi bi-info-circle me-1"></i> 
+                更新频率：每日更新
+            </span>
+            <a href="https://github.com/v2rayc/v2rayc.github.io" target="_blank" class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-github me-1"></i> 访问源码库
+            </a>
+        </div>
     </div>
+</div>
+
+<h3 id="datiya" class="section-title animate__animated animate__fadeIn">
+    <i class="bi bi-card-list me-2"></i> 按日期查看节点
+</h3>
+<div class="row">
+
+        </div>
+    </div>
+
+    <footer id="about" class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="bi bi-info-circle me-2"></i>关于本项目</h5>
+                    <p>
+                        此页面自动从多个来源采集免费Clash/V2Ray节点订阅，供学习和测试使用。
+                        请勿用于非法用途，遵守当地法律法规。
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="bi bi-github me-1"></i> 项目源码
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="bi bi-diagram-3 me-2"></i>数据来源</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="https://free.datiya.com/" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-link-45deg me-1"></i>Datiya
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://b.freev2.net/" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-link-45deg me-1"></i>FreeV2.net
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://github.com/PuddinCat/BestClash" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-link-45deg me-1"></i>BestClash
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://github.com/shaoyouvip/free" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-link-45deg me-1"></i>周润发公益v2ray
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://proxy4all.github.io/FreeShadowrocket/" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-link-45deg me-1"></i>Shadowrocket共享账号
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="bi bi-shield-exclamation me-2"></i>免责声明</h5>
+                    <p>
+                        本站不生产任何节点，仅收集和整理公开的免费节点信息。
+                        节点稳定性和可用性无法保证，请勿依赖这些节点进行重要活动。
+                    </p>
+                    <p class="mt-2">
+                        <small class="text-muted">更新频率: 每日自动更新</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Clash/V2Ray 免费节点订阅 | <i class="bi bi-arrow-clockwise me-1"></i>每日自动更新
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化剪贴板
+            var clipboard = new ClipboardJS('.copy-btn');
+            
+            clipboard.on('success', function(e) {
+                const originalHtml = e.trigger.innerHTML;
+                e.trigger.innerHTML = '<i class="bi bi-check"></i> 已复制';
+                e.trigger.classList.add('btn-success');
+                e.trigger.classList.remove('btn-outline-primary');
+                
+                setTimeout(function() {
+                    e.trigger.innerHTML = originalHtml;
+                    e.trigger.classList.remove('btn-success');
+                    e.trigger.classList.add('btn-outline-primary');
+                }, 1500);
+                
+                e.clearSelection();
+            });
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
