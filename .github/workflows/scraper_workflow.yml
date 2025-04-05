@@ -58,7 +58,7 @@ jobs:
         
       # 可选：上传生成的文件作为构建产物
       - name: 上传生成的数据和网页
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: scraped-data
           path: |
