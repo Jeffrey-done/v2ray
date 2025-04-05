@@ -43,13 +43,6 @@ jobs:
           # 添加重定向到index.html
           echo '<meta http-equiv="refresh" content="0; url=./index.html">' > _site/index.html
           
-      # 添加上传构建产物步骤（显式依赖）
-      - name: 上传构建产物 (Artifact)
-        uses: actions/upload-artifact@v1
-        with:
-          name: pages-artifact
-          path: _site
-          
       - name: 上传Pages构建结果
         uses: actions/upload-pages-artifact@v1
         with:

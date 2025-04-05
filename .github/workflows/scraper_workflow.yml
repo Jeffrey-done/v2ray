@@ -55,13 +55,6 @@ jobs:
         
       - name: 重新生成HTML页面
         run: python monitor_and_fetch.py --generate-html
-        
-      # 可选：上传生成的文件作为构建产物
-      - name: 上传生成的数据和网页
-        uses: actions/upload-artifact@v1
-        with:
-          name: scraped-data
-          path: web/
       
       # 提交更改回仓库
       - name: 配置Git
