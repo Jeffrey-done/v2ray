@@ -1,0 +1,12 @@
+{
+  "title": "日日更新节点永久订阅",
+  "description": "永久固定的订阅地址，国内优先使用镜像订阅",
+  "clash_link": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
+  "v2ray_link": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+  "clash_mirror": "https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
+  "v2ray_mirror": "https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+  "clash_available": false,
+  "v2ray_available": false,
+  "scrape_time": "2025-04-05 09:29:39",
+  "update_interval": "日更新"
+}

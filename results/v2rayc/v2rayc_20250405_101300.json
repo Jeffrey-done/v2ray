@@ -1,0 +1,19 @@
+{
+  "title": "4月5日v2rayc.github.io免费节点订阅链接",
+  "date": "20250405",
+  "update_time": "2025-04-05 10:00:00",
+  "clash_links": [
+    "https://v2rayc.github.io/uploads/2025/04/0-20250405.yaml",
+    "https://v2rayc.github.io/uploads/2025/04/1-20250405.yaml"
+  ],
+  "v2ray_links": [
+    "https://v2rayc.github.io/uploads/2025/04/0-20250405.txt",
+    "https://v2rayc.github.io/uploads/2025/04/1-20250405.txt"
+  ],
+  "singbox_links": [
+    "https://v2rayc.github.io/uploads/2025/04/20250405.json"
+  ],
+  "scrape_time": "2025-04-05 10:13:00",
+  "source_url": "https://github.com/v2rayc/v2rayc.github.io",
+  "note": "这是示例数据，仅用于测试"
+} 

@@ -1,0 +1,28 @@
+{
+  "title": "周润发公益免费v2ray节点订阅",
+  "description": "每2小时更新一次，提供免费v2ray节点订阅",
+  "yaml_links": [
+    "https://raw.githubusercontent.com/shaoyouvip/free/main/all.yaml"
+  ],
+  "base64_links": [
+    "https://raw.githubusercontent.com/shaoyouvip/free/main/base64.txt"
+  ],
+  "mihomo_links": [
+    "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml"
+  ],
+  "no_proxy_links": {
+    "yaml": [
+      "https://d.aizrf.com/vless-all"
+    ],
+    "base64": [
+      "https://d.aizrf.com/vless-base64"
+    ],
+    "mihomo": [
+      "https://d.aizrf.com/vless-mihomo"
+    ]
+  },
+  "clients": [],
+  "scrape_time": "2025-04-05 09:08:55",
+  "source_url": "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/README.md",
+  "update_interval": "2小时"
+}

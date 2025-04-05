@@ -1,0 +1,24 @@
+标题: 周润发公益免费v2ray节点订阅
+描述: 每2小时更新一次，提供免费v2ray节点订阅
+爬取时间: 2025-04-05 09:09:13
+来源: https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/README.md
+更新间隔: 2小时
+
+yaml格式订阅链接:
+- https://raw.githubusercontent.com/shaoyouvip/free/main/all.yaml
+
+base64格式订阅链接:
+- https://raw.githubusercontent.com/shaoyouvip/free/main/base64.txt
+
+mihomo格式订阅链接:
+- https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
+
+无需代理链接:
+yaml格式:
+- https://d.aizrf.com/vless-all
+base64格式:
+- https://d.aizrf.com/vless-base64
+mihomo格式:
+- https://d.aizrf.com/vless-mihomo
+
+支持的客户端:

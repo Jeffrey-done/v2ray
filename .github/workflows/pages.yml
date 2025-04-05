@@ -1,0 +1,51 @@
+name: 部署到GitHub Pages
+
+on:
+  # 在scraper_workflow完成后运行
+  workflow_run:
+    workflows: ["自动爬取节点订阅"]
+    types:
+      - completed
+  # 也允许手动触发
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v2
+        with:
+          # 确保获取最新的数据
+          ref: main
+          
+      - name: 设置Pages
+        uses: actions/configure-pages@v3
+        
+      - name: 打包网站文件
+        run: |
+          # 创建_site目录作为部署根目录
+          mkdir -p _site
+          # 复制web目录到_site
+          cp -r web/* _site/
+          # 添加重定向到index.html
+          echo '<meta http-equiv="refresh" content="0; url=./index.html">' > _site/index.html
+          
+      - name: 上传构建结果
+        uses: actions/upload-pages-artifact@v2
+        
+      - name: 部署到GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 

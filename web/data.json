@@ -1,0 +1,286 @@
+{
+  "dates": [
+    "20250405",
+    "20250404",
+    "20250403",
+    "20250401",
+    "20250331",
+    "20250330",
+    "20250329",
+    "20250328",
+    "20250327",
+    "20250326"
+  ],
+  "freev2": true,
+  "bestclash": {
+    "github_link": "https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml",
+    "mirror_link": "https://ghfile.geekertao.top/https://github.com/PuddinCat/BestClash/blob/main/proxies.yaml",
+    "scrape_time": "2025-04-05 10:14:10",
+    "source_url": "https://github.com/PuddinCat/BestClash",
+    "description": "免费Clash代理！自动从网上爬取最快的代理，每30分钟更新！"
+  },
+  "shaoyou": {
+    "title": "周润发公益免费v2ray节点订阅",
+    "description": "每2小时更新一次，提供免费v2ray节点订阅",
+    "yaml_links": [
+      "https://raw.githubusercontent.com/shaoyouvip/free/main/all.yaml"
+    ],
+    "base64_links": [
+      "https://raw.githubusercontent.com/shaoyouvip/free/main/base64.txt"
+    ],
+    "mihomo_links": [
+      "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml"
+    ],
+    "no_proxy_links": {
+      "yaml": [
+        "https://d.aizrf.com/vless-all"
+      ],
+      "base64": [
+        "https://d.aizrf.com/vless-base64"
+      ],
+      "mihomo": [
+        "https://d.aizrf.com/vless-mihomo"
+      ]
+    },
+    "clients": [],
+    "scrape_time": "2025-04-05 09:09:13",
+    "source_url": "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/README.md",
+    "update_interval": "2小时"
+  },
+  "ripao": {
+    "title": "日日更新节点永久订阅",
+    "description": "永久固定的订阅地址，国内优先使用镜像订阅",
+    "clash_link": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
+    "v2ray_link": "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+    "clash_mirror": "https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
+    "v2ray_mirror": "https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
+    "clash_available": false,
+    "v2ray_available": false,
+    "scrape_time": "2025-04-05 09:29:39",
+    "update_interval": "日更新"
+  },
+  "v2rayc": {
+    "title": "4月4日→19.1M/S|免费节点Clash/SSR/V2rayC订阅链接",
+    "date": "20250404",
+    "update_time": "2025-04-04 09:23:54",
+    "clash_links": [
+      "https://v2rayc.github.io/uploads/2025/04/4-20250404.yaml",
+      "https://v2rayc.github.io/uploads/2025/04/2-20250404.yaml",
+      "https://v2rayc.github.io/uploads/2025/04/3-20250404.yaml",
+      "https://v2rayc.github.io/uploads/2025/04/0-20250404.yaml",
+      "https://v2rayc.github.io/uploads/2025/04/1-20250404.yaml"
+    ],
+    "v2ray_links": [
+      "https://v2rayc.github.io/uploads/2025/04/1-20250404.txt",
+      "https://v2rayc.github.io/uploads/2025/04/4-20250404.txt",
+      "https://v2rayc.github.io/uploads/2025/04/3-20250404.txt",
+      "https://v2rayc.github.io/uploads/2025/04/0-20250404.txt",
+      "https://v2rayc.github.io/uploads/2025/04/2-20250404.txt"
+    ],
+    "singbox_links": [
+      "https://v2rayc.github.io/uploads/2025/04/20250404.json"
+    ],
+    "scrape_time": "2025-04-05 10:13:51",
+    "source_url": "https://github.com/v2rayc/v2rayc.github.io/blob/main/README.md"
+  },
+  "20250405": {
+    "date": "2025-04-05",
+    "title": "【2025年04月05日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-04-04 20:19:59",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250405-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250405-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-04-04 20:19:59",
+      "可用节点": "28个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 20,
+    "scrape_time": "2025-04-05 10:18:40"
+  },
+  "20250404": {
+    "date": "2025-04-04",
+    "title": "【2025年04月04日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-04-03 20:20:54",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250404-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250404-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-04-03 20:20:54",
+      "可用节点": "32个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 23,
+    "scrape_time": "2025-04-05 10:18:43"
+  },
+  "20250403": {
+    "date": "2025-04-03",
+    "title": "【2025年04月03日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-04-02 20:20:31",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250403-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250403-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-04-02 20:20:31",
+      "可用节点": "30个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 22,
+    "scrape_time": "2025-04-05 10:18:45"
+  },
+  "20250401": {
+    "date": "2025-04-01",
+    "title": "【2025年04月01日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-03-31 20:15:28",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250401-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250401-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-03-31 20:15:28",
+      "可用节点": "25个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 13,
+    "scrape_time": "2025-04-05 10:18:47"
+  },
+  "20250331": {
+    "date": "2025-03-31",
+    "title": "【2025年03月31日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-03-30 20:21:01",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250331-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250331-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-03-30 20:21:01",
+      "可用节点": "27个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 24,
+    "scrape_time": "2025-04-05 10:18:49"
+  },
+  "20250330": {
+    "date": "2025-03-30",
+    "title": "【2025年03月30日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-03-29 20:20:15",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250330-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250330-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-03-29 20:20:15",
+      "可用节点": "25个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 21,
+    "scrape_time": "2025-04-05 10:18:52"
+  },
+  "20250329": {
+    "date": "2025-03-29",
+    "title": "【2025年03月29日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-03-28 20:19:44",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250329-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250329-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-03-28 20:19:44",
+      "可用节点": "26个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 21,
+    "scrape_time": "2025-04-05 10:18:53"
+  },
+  "20250328": {
+    "date": "2025-03-28",
+    "title": "【2025年03月28日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-03-27 20:20:33",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250328-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250328-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-03-27 20:20:33",
+      "可用节点": "29个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 21,
+    "scrape_time": "2025-04-05 10:18:55"
+  },
+  "20250327": {
+    "date": "2025-03-27",
+    "title": "【2025年03月27日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-03-26 20:19:50",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250327-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250327-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-03-26 20:19:50",
+      "可用节点": "31个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 26,
+    "scrape_time": "2025-04-05 10:18:57"
+  },
+  "20250326": {
+    "date": "2025-03-26",
+    "title": "【2025年03月26日】每日更新！高速免费节点，SSR/V2ray/Clash订阅链接",
+    "update_time": "2025-03-25 20:20:11",
+    "clash_links": [
+      "https://free.datiya.com/uploads/20250326-clash.yaml"
+    ],
+    "v2ray_links": [
+      "https://free.datiya.com/uploads/20250326-v2ray.txt"
+    ],
+    "nodes_info": {
+      "更新时间": "2025-03-25 20:20:11",
+      "可用节点": "27个",
+      "地区分布": "美国、日本、新加坡、欧洲等",
+      "平均速度": "100Mbps以上",
+      "稳定性": "24小时持续监测"
+    },
+    "expected_node_count": 22,
+    "scrape_time": "2025-04-05 10:18:59"
+  }
+}

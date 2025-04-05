@@ -1,0 +1,33 @@
+# Python缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 日志文件
+*.log
+
+# 临时调试文件
+debug_*.html
+debug_*.txt
+
+# 环境文件
+.env
+venv/
+env/
+ENV/
+
+# 结果和下载目录（如果您不想上传结果）
+# 注释掉以下行如果你希望将结果提交到GitHub
+# results/
+# downloads/
+
+# Visual Studio Code配置
+.vscode/
+
+# Windows文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac文件
+.DS_Store 
