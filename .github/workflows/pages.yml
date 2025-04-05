@@ -9,45 +9,23 @@ on:
   # 也允许手动触发
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: 检出代码
         uses: actions/checkout@v2
-        with:
-          # 确保获取最新的数据
-          ref: main
-          
-      - name: 设置Pages
-        uses: actions/configure-pages@v2
         
-      - name: 打包网站文件
+      - name: 准备页面
         run: |
-          # 创建_site目录作为部署根目录
           mkdir -p _site
-          # 复制web目录到_site
-          cp -r web/* _site/
-          # 添加重定向到index.html
+          cp -r web/* _site/ || echo "web目录可能为空，将创建空站点"
           echo '<meta http-equiv="refresh" content="0; url=./index.html">' > _site/index.html
           
-      - name: 上传Pages构建结果
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: _site
-        
       - name: 部署到GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1 
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site 
