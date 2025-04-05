@@ -45,16 +45,16 @@ jobs:
           
       # 添加上传构建产物步骤（显式依赖）
       - name: 上传构建产物 (Artifact)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: pages-artifact
           path: _site
           
       - name: 上传Pages构建结果
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
           path: _site
         
       - name: 部署到GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v2 
