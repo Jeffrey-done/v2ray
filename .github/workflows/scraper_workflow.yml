@@ -7,6 +7,10 @@ on:
   workflow_dispatch:
     # 允许从GitHub UI手动触发工作流
 
+# 添加权限设置
+permissions:
+  contents: write  # 给予写入内容的权限
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
