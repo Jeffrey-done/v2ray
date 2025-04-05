@@ -26,13 +26,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 检出代码
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           # 确保获取最新的数据
           ref: main
           
       - name: 设置Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v2
         
       - name: 打包网站文件
         run: |
@@ -45,16 +45,16 @@ jobs:
           
       # 添加上传构建产物步骤（显式依赖）
       - name: 上传构建产物 (Artifact)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: pages-artifact
           path: _site
           
       - name: 上传Pages构建结果
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
           path: _site
         
       - name: 部署到GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2 
+        uses: actions/deploy-pages@v1 

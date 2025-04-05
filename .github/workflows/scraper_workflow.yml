@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 检出代码
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: 设置Python环境
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
           python-version: '3.10'
           
@@ -58,7 +58,7 @@ jobs:
         
       # 可选：上传生成的文件作为构建产物
       - name: 上传生成的数据和网页
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: scraped-data
           path: |
