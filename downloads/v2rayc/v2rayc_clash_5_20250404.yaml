@@ -1,3 +1,7 @@
+# 模版名称：ACL4SSR.ini
+# 模版最后更新日期：2025/02/11 01:22:37
+# 配置生成日期：2025-04-03 12:07:58
+
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -46,131 +50,157 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 6元高速机场：cczzuu.top
+    type: ss
+    server: 127.0.0.1
+    port: 443
+    tls: false
+    password: 6601fb90e9b3
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 重度用户推荐使用机场
+    type: ss
+    server: 127.0.0.1
+    port: 443
+    tls: false
+    password: 6601fb90e9b3
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 免费节点可能会泄漏访问记录
+    type: ss
+    server: 127.0.0.1
+    port: 443
+    tls: false
+    password: 6601fb90e9b3
+    ip-version: dual
+    cipher: aes-128-gcm
   - name: 🇸🇰_SK_斯洛伐克
     type: ss
     server: 156.146.40.194
     port: 989
+    tls: false
     password: f8f7aCzcPKbsF8p3
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_1
     type: ss
     server: 34.222.2.112
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇦🇺_AU_澳大利亚
     type: trojan
     server: 43.162.127.44
     port: 443
+    network: tcp
+    tls: true
     password: oIwjHDXpKePvYIg8
     sni: myvps.cfd
+    skip-cert-verify: false
     ip-version: dual
-    udp: true
   - name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
     type: ss
     server: 81.19.137.66
     port: 44316
+    tls: false
     password: Qx22XZwNt4SCcnWNkypEAj
     ip-version: dual
-    udp: true
     cipher: chacha20-ietf-poly1305
   - name: 🇺🇸_US_美国_2
     type: ss
     server: 52.88.180.184
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_3
     type: ss
     server: 38.110.1.146
     port: 7001
+    tls: false
     password: RexnBgU7EV5ADxG
     ip-version: dual
-    udp: true
     cipher: aes-256-gcm
   - name: 🇺🇸_US_美国_4
     type: ss
     server: 52.40.170.193
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_5
     type: ss
     server: 34.208.203.47
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_6
     type: ss
     server: 34.217.15.41
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
     type: ss
     server: 54.202.0.97
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
     type: ss
     server: 77.239.117.121
     port: 28694
+    tls: false
     password: sojzFfZN5WMHqzvVJcDJJ9
     ip-version: dual
-    udp: true
     cipher: chacha20-ietf-poly1305
   - name: 🇺🇸_US_美国_7
     type: ss
     server: 52.37.220.218
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国->🇪🇸_ES_西班牙
     type: trojan
     server: 104.21.96.1
     port: 2083
     network: ws
+    tls: true
     password: SD85M89IdW67
     sni: yjc.twn24.ir
     skip-cert-verify: false
     ws-opts:
-      path: /🆔@M3HDIO1
+      path: /@M3HDIO1
       headers:
         host: yjc.twn24.ir
     ip-version: dual
-    udp: true
   - name: 🇺🇸_US_美国_8
     type: ss
     server: 137.175.113.215
     port: 8388
+    tls: false
     password: asd123456
     ip-version: dual
-    udp: true
     cipher: chacha20-ietf
-  - name: 🇺🇸_US_美国_9
+  - name: 🇺🇸_US_美国_10
     type: ss
     server: 34.209.118.169
     port: 443
+    tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇹🇷_TR_土耳其
     type: vmess
@@ -178,8 +208,8 @@ proxies:
     port: 14034
     uuid: e2dbd04f-63ff-4885-abdc-7b78e41a473d
     network: tcp
+    tls: false
     ip-version: dual
-    udp: true
     alterId: 0
     cipher: auto
 proxy-groups:
@@ -188,6 +218,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
       - 🇸🇰_SK_斯洛伐克
       - 🇺🇸_US_美国_1
       - 🇦🇺_AU_澳大利亚
@@ -197,12 +230,12 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
       - 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国->🇪🇸_ES_西班牙
       - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
       - 🇹🇷_TR_土耳其
   - name: ♻️ 自动选择
     type: url-test
@@ -210,6 +243,9 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
       - 🇸🇰_SK_斯洛伐克
       - 🇺🇸_US_美国_1
       - 🇦🇺_AU_澳大利亚
@@ -219,12 +255,12 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
       - 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国->🇪🇸_ES_西班牙
       - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
       - 🇹🇷_TR_土耳其
   - name: 🌍 国外媒体
     type: select
@@ -232,6 +268,9 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
       - 🇸🇰_SK_斯洛伐克
       - 🇺🇸_US_美国_1
       - 🇦🇺_AU_澳大利亚
@@ -241,18 +280,21 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
       - 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国->🇪🇸_ES_西班牙
       - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
       - 🇹🇷_TR_土耳其
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
       - 🇸🇰_SK_斯洛伐克
       - 🇺🇸_US_美国_1
       - 🇦🇺_AU_澳大利亚
@@ -262,18 +304,21 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
       - 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国->🇪🇸_ES_西班牙
       - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
       - 🇹🇷_TR_土耳其
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
       - 🇸🇰_SK_斯洛伐克
       - 🇺🇸_US_美国_1
       - 🇦🇺_AU_澳大利亚
@@ -283,18 +328,21 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
       - 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国->🇪🇸_ES_西班牙
       - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
       - 🇹🇷_TR_土耳其
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
       - 🇸🇰_SK_斯洛伐克
       - 🇺🇸_US_美国_1
       - 🇦🇺_AU_澳大利亚
@@ -304,12 +352,12 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
       - 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国->🇪🇸_ES_西班牙
       - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
       - 🇹🇷_TR_土耳其
   - name: 🎯 全球直连
     type: select
@@ -333,6 +381,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
       - 🇸🇰_SK_斯洛伐克
       - 🇺🇸_US_美国_1
       - 🇦🇺_AU_澳大利亚
@@ -342,12 +393,12 @@ proxy-groups:
       - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
       - 🇬🇧_GB_英国->🇷🇺_RU_俄罗斯
       - 🇺🇸_US_美国_7
       - 🇺🇸_US_美国->🇪🇸_ES_西班牙
       - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
+      - 🇺🇸_US_美国_10
       - 🇹🇷_TR_土耳其
 rules:
 # 本地/局域网地址
