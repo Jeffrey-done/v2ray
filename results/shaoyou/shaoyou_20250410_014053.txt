@@ -1,0 +1,30 @@
+标题: 周润发公益免费v2ray节点订阅
+描述: 每2小时更新一次，提供免费v2ray节点订阅
+爬取时间: 2025-04-10 01:40:53
+来源: [https://github.com/yanue/V2rayU](https://github.com/yanue/V2rayU)
+更新间隔: 2小时
+
+yaml格式订阅链接:
+- https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml
+- https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
+
+base64格式订阅链接:
+- https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt
+
+mihomo格式订阅链接:
+- https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml
+
+无需代理链接:
+yaml格式:
+base64格式:
+mihomo格式:
+
+支持的客户端:
+- SingBox (Mac/Linux/Android/Ios): https://sing-box.sagernet.org/clients/https://sing-box.sagernet.org/clients/
+- FlClash (Mac/Linux/Windows/Android): https://github.com/chen08209/FlClashhttps://github.com/chen08209/FlClash
+- Clash Verge (Mac/Linux/Windows): https://github.com/clash-verge-rev/clash-verge-revhttps://github.com/clash-verge-rev/clash-verge-rev
+- Clash Meta Android (Android): https://github.com/MetaCubeX/ClashMetaForAndroidhttps://github.com/MetaCubeX/ClashMetaForAndroid
+- ClashX Meta (Mac): https://github.com/MetaCubeX/ClashX.Metahttps://github.com/MetaCubeX/ClashX.Meta
+- V2RayN (Windows): https://github.com/2dust/v2rayNhttps://github.com/2dust/v2rayN
+- V2RayNG (Android): https://github.com/2dust/v2rayNGhttps://github.com/2dust/v2rayNG
+- V2RayU (Mac): https://github.com/yanue/V2rayUhttps://github.com/yanue/V2rayU
