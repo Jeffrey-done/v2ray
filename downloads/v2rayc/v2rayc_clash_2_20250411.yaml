@@ -1,7 +1,3 @@
-# 模版名称：ACL4SSR.ini
-# 模版最后更新日期：2025/02/11 01:22:37
-# 配置生成日期：2025-04-10 12:26:22
-
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -50,40 +46,18 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 6元高速机场：cczzuu.top
-    type: ss
-    server: 127.0.0.1
-    port: 443
-    tls: false
-    password: 6601fb90e9b3
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 重度用户推荐使用机场
-    type: ss
-    server: 127.0.0.1
-    port: 443
-    tls: false
-    password: 6601fb90e9b3
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 免费节点可能会泄漏访问记录
-    type: ss
-    server: 127.0.0.1
-    port: 443
-    tls: false
-    password: 6601fb90e9b3
-    ip-version: dual
-    cipher: aes-128-gcm
   - name: 🇺🇸_US_美国->🇬🇧_GB_英国_1
     type: vmess
     server: c7344c10-suk9s0-sxv16d-1k09w.se.plebai.net
     port: 1280
     uuid: 8de795d2-a06f-11ed-8edf-f23c913c8d2b
     network: ws
-    tls: true
-    servername: broadcastlv.chat.bilibili.com
-    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: broadcastlv.chat.bilibili.com
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇺🇸_US_美国->🇬🇧_GB_英国_2
@@ -91,37 +65,37 @@ proxies:
     server: 104.21.73.150
     port: 443
     network: ws
-    tls: true
     password: cd0e795a-4f26-4f8c-9981-ed8b7dcb6126
     sni: sDFgHU.931.pP.ua
-    skip-cert-verify: false
     ws-opts:
       path: /93fAx7DxPbqU8RhisheV
-      headers: {}
     ip-version: dual
+    udp: true
   - name: 🇺🇸_US_美国_1
     type: trojan
     server: 104.21.96.1
     port: 443
     network: ws
-    tls: true
     password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
     sni: 1g.890699.xyZ
-    skip-cert-verify: false
     ws-opts:
       path: /lXENb74xF4ylXngZ
-      headers: {}
     ip-version: dual
+    udp: true
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
     type: vmess
     server: v29.heduian.link
     port: 30829
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    tls: true
-    servername: v29.heduian.link
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        host: v29.heduian.link
     ip-version: dual
+    udp: true
     alterId: 2
     cipher: auto
   - name: 🇺🇸_US_美国->🇨🇳_CN_中国_1
@@ -130,10 +104,12 @@ proxies:
     port: 80
     uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
     network: ws
-    tls: true
-    servername: broadcastlv.chat.bilibili.com
-    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: broadcastlv.chat.bilibili.com
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇺🇸_US_美国->🇮🇩_ID_印度尼西亚
@@ -141,152 +117,147 @@ proxies:
     server: sanjose06.852224.ggff.net
     port: 443
     network: ws
-    tls: true
     password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
     sni: sanjose06.852224.ggff.net
-    skip-cert-verify: false
     ws-opts:
       path: /T5yZBrY2Qkg2cThJQeJb
       headers:
         host: sanjose06.852224.ggff.net
     ip-version: dual
+    udp: true
   - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
     type: trojan
     server: 3.74.83.179
     port: 22222
-    network: tcp
-    tls: true
     password: telegram-id-privatevpns
     sni: trojan.burgerip.co.uk
     skip-cert-verify: false
     ip-version: dual
+    udp: true
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
     type: vmess
     server: dxv4.pai50288.uk
     port: 14100
     uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
     network: tcp
-    tls: false
+    sni: ''
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇹🇷_TR_土耳其
     type: trojan
     server: 185.67.125.31
     port: 443
-    network: tcp
-    tls: true
     password: '74260698218909400'
     sni: unified-lioness.shiner427.skin
     skip-cert-verify: false
     ip-version: dual
+    udp: true
   - name: 🇨🇳_CN_中国
     type: vmess
     server: cm1.awslcn.info
     port: 25230
     uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
     network: ws
-    tls: true
-    servername: cm1.awslcn.info
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: cm1.awslcn.info
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇯🇴_JO_约旦
     type: trojan
     server: 109.107.159.124
     port: 443
-    network: tcp
-    tls: true
     password: '74260698218909400'
     sni: ample-warthog.shiner427.skin
     skip-cert-verify: false
     ip-version: dual
+    udp: true
   - name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
     type: vmess
     server: v35.heduian.link
     port: 30835
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    tls: true
-    servername: baidu.com
-    skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        host: baidu.com
     ip-version: dual
+    udp: true
     alterId: 2
     cipher: auto
   - name: 🇩🇪_DE_德国
     type: ss
     server: 193.108.119.230
     port: 8080
-    tls: false
     password: 14fFPrbezE3HDZzsMOr6
     ip-version: dual
+    udp: true
     cipher: rc4-md5
   - name: 🇺🇸_US_美国->🇬🇧_GB_英国_3
     type: trojan
     server: 172.67.163.102
     port: 443
     network: ws
-    tls: true
     password: cd0e795a-4f26-4f8c-9981-ed8b7dcb6126
     sni: sDFgHU.931.pP.ua
-    skip-cert-verify: false
     ws-opts:
       path: /93fAx7DxPbqU8RhisheV
-      headers: {}
     ip-version: dual
+    udp: true
   - name: 🇺🇸_US_美国->🇨🇳_CN_中国_2
     type: vmess
     server: 186.190.215.193
     port: 22324
     uuid: 04621bae-ab36-11ec-b909-0242ac120002
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
-  - name: 🇺🇸_US_美国_6
+  - name: 🇺🇸_US_美国_2
     type: trojan
     server: 104.21.16.1
     port: 443
     network: ws
-    tls: true
     password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
     sni: 1g.890699.xyZ
-    skip-cert-verify: false
     ws-opts:
       path: /lXENb74xF4ylXngZ
-      headers: {}
     ip-version: dual
+    udp: true
   - name: 🇮🇸_IS_冰岛
     type: ss
     server: 37.235.49.152
     port: 989
-    tls: false
     password: f8f7aCzcPKbsF8p3
     ip-version: dual
+    udp: true
     cipher: aes-256-cfb
   - name: 🇬🇧_GB_英国
     type: trojan
     server: 51.24.42.128
     port: 22222
     network: tcp
-    tls: true
     password: telegram-id-privatevpns
     sni: trojan.burgerip.co.uk
     alpn:
       - http/1.1
-    skip-cert-verify: false
     ip-version: dual
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2
       - 🇺🇸_US_美国_1
@@ -302,7 +273,7 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_3
       - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_2
       - 🇮🇸_IS_冰岛
       - 🇬🇧_GB_英国
   - name: ♻️ 自动选择
@@ -311,9 +282,6 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2
       - 🇺🇸_US_美国_1
@@ -329,7 +297,7 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_3
       - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_2
       - 🇮🇸_IS_冰岛
       - 🇬🇧_GB_英国
   - name: 🌍 国外媒体
@@ -338,9 +306,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2
       - 🇺🇸_US_美国_1
@@ -356,7 +321,7 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_3
       - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_2
       - 🇮🇸_IS_冰岛
       - 🇬🇧_GB_英国
   - name: 📲 电报信息
@@ -364,9 +329,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2
       - 🇺🇸_US_美国_1
@@ -382,7 +344,7 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_3
       - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_2
       - 🇮🇸_IS_冰岛
       - 🇬🇧_GB_英国
   - name: Ⓜ️ 微软服务
@@ -390,9 +352,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2
       - 🇺🇸_US_美国_1
@@ -408,7 +367,7 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_3
       - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_2
       - 🇮🇸_IS_冰岛
       - 🇬🇧_GB_英国
   - name: 🍎 苹果服务
@@ -416,9 +375,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2
       - 🇺🇸_US_美国_1
@@ -434,7 +390,7 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_3
       - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_2
       - 🇮🇸_IS_冰岛
       - 🇬🇧_GB_英国
   - name: 🎯 全球直连
@@ -459,9 +415,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇺🇸_US_美国->🇬🇧_GB_英国_1
       - 🇺🇸_US_美国->🇬🇧_GB_英国_2
       - 🇺🇸_US_美国_1
@@ -477,7 +430,7 @@ proxy-groups:
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国->🇬🇧_GB_英国_3
       - 🇺🇸_US_美国->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_2
       - 🇮🇸_IS_冰岛
       - 🇬🇧_GB_英国
 rules:
