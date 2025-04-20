@@ -1,7 +1,3 @@
-# 模版名称：ACL4SSR.ini
-# 模版最后更新日期：2025/02/11 01:22:37
-# 配置生成日期：2025-04-16 14:35:36
-
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -50,40 +46,20 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 6元高速机场：cczzuu.top
-    type: ss
-    server: 127.0.0.1
-    port: 443
-    tls: false
-    password: 6601fb90e9b3
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 重度用户推荐使用机场
-    type: ss
-    server: 127.0.0.1
-    port: 443
-    tls: false
-    password: 6601fb90e9b3
-    ip-version: dual
-    cipher: aes-128-gcm
-  - name: 免费节点可能会泄漏访问记录
-    type: ss
-    server: 127.0.0.1
-    port: 443
-    tls: false
-    password: 6601fb90e9b3
-    ip-version: dual
-    cipher: aes-128-gcm
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
     type: vmess
     server: v7.heduian.link
     port: 30807
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    tls: true
-    servername: ocbc.com
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        host: ocbc.com
     ip-version: dual
+    udp: true
     alterId: 2
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
@@ -92,10 +68,13 @@ proxies:
     port: 30840
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    tls: true
-    servername: api100-core-quic-lf.amemv.com
-    skip-cert-verify: true
+    sni: ''
+    ws-opts:
+      path: /index
+      headers:
+        host: api100-core-quic-lf.amemv.com
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇫🇷_FR_法国_1
@@ -104,8 +83,8 @@ proxies:
     port: 17235
     uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
@@ -114,10 +93,14 @@ proxies:
     port: 80
     uuid: 06135553-6f54-4d32-af08-83bc94823e7e
     network: ws
-    tls: true
-    servername: 834402699488042025041118280456411.s15.chibaba.filegear-sg.me
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /s15.html
+      headers:
+        host: 834402699488042025041118280456411.s15.chibaba.filegear-sg.me
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国
@@ -126,8 +109,8 @@ proxies:
     port: 5229
     uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
@@ -136,25 +119,25 @@ proxies:
     port: 5229
     uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
-  - name: 🇺🇸_US_美国_1
+  - name: 🇺🇸_US_美国
     type: ss
     server: 45.8.98.163
     port: 2636
-    tls: false
     password: DLW8QqdfAvfUHSeucMIF4E
     ip-version: dual
+    udp: true
     cipher: chacha20-ietf-poly1305
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
     type: ss
     server: zz5.fgmcx.top
     port: 41068
-    tls: false
     password: be443689-bc64-49ff-85a5-8eecaa2235d3
     ip-version: dual
+    udp: true
     cipher: chacha20-ietf-poly1305
   - name: 🇨🇳_CN_中国->🇫🇷_FR_法国_2
     type: vmess
@@ -162,8 +145,8 @@ proxies:
     port: 17235
     uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -172,10 +155,14 @@ proxies:
     port: 30824
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    tls: true
-    servername: baidu.com
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        host: baidu.com
     ip-version: dual
+    udp: true
     alterId: 2
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
@@ -184,8 +171,8 @@ proxies:
     port: 5228
     uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
@@ -194,8 +181,8 @@ proxies:
     port: 5229
     uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_8
@@ -204,8 +191,9 @@ proxies:
     port: 14100
     uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
     network: tcp
-    tls: false
+    sni: ''
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
@@ -214,10 +202,14 @@ proxies:
     port: 30825
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    tls: true
-    servername: baidu.com
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        host: baidu.com
     ip-version: dual
+    udp: true
     alterId: 2
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_9
@@ -226,8 +218,8 @@ proxies:
     port: 5228
     uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_10
@@ -236,10 +228,14 @@ proxies:
     port: 30836
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    tls: true
-    servername: baidu.com
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /oooo
+      headers:
+        host: baidu.com
     ip-version: dual
+    udp: true
     alterId: 2
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_11
@@ -248,8 +244,8 @@ proxies:
     port: 5229
     uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_12
@@ -258,8 +254,8 @@ proxies:
     port: 5228
     uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇺🇸_US_美国_13
@@ -268,8 +264,8 @@ proxies:
     port: 14100
     uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_2
@@ -278,10 +274,14 @@ proxies:
     port: 80
     uuid: 0c5e59d4-2ab3-4dc7-8b56-4ee355551162
     network: ws
-    tls: true
-    servername: 173578851232252025041119231677671.s15.chibaba.filegear-sg.me
+    sni: ''
     skip-cert-verify: true
+    ws-opts:
+      path: /s15.html
+      headers:
+        host: 173578851232252025041119231677671.s15.chibaba.filegear-sg.me
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
   - name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
@@ -290,8 +290,8 @@ proxies:
     port: 23910
     uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
     network: tcp
-    tls: false
     ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
 proxy-groups:
@@ -300,16 +300,13 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -330,16 +327,13 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -360,16 +354,13 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -389,16 +380,13 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -418,16 +406,13 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -447,16 +432,13 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
@@ -493,16 +475,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 6元高速机场：cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
       - 🇨🇳_CN_中国->🇺🇸_US_美国_1
       - 🇨🇳_CN_中国->🇺🇸_US_美国_2
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
       - 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加_1
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
