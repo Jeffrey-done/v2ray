@@ -1,3 +1,7 @@
+# 模版名称：ACL4SSR.ini
+# 模版最后更新日期：2025/02/11 01:22:37
+# 配置生成日期：2025-04-27 18:10:14
+
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -46,397 +50,631 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-    type: trojan
-    server: 45.146.232.171
-    port: 46926
-    password: aa34901b-0877-4143-8e50-67de188e178a
-    sni: q08m.vgraxiw73s.hasyaf.cn
-    ip-version: dual
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - name: 6元高速机场：cczzuu.top
     type: ss
-    server: 62.60.233.83
+    server: 127.0.0.1
     port: 443
-    password: 1gtrkd6uCAeS
+    tls: false
+    password: 6601fb90e9b3
     ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇬🇧_GB_英国_1
+    cipher: aes-128-gcm
+  - name: 重度用户推荐使用机场
     type: ss
-    server: 62.100.205.48
+    server: 127.0.0.1
+    port: 443
+    tls: false
+    password: 6601fb90e9b3
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 免费节点可能会泄漏访问记录
+    type: ss
+    server: 127.0.0.1
+    port: 443
+    tls: false
+    password: 6601fb90e9b3
+    ip-version: dual
+    cipher: aes-128-gcm
+  - name: 1|🌀2-PT+|++3.5MB%2fs
+    type: ss
+    server: 185.231.233.112
     port: 989
+    tls: false
     password: f8f7aCzcPKbsF8p3
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - name: 1|🇺🇸15 |  5.8MB/s
     type: vmess
-    server: v5.heduian.link
-    port: 30805
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: tk.hzlt.tkddns.xyz
+    port: 22643
+    uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
     network: ws
-    sni: ''
+    tls: true
+    servername: tk.hzlt.tkddns.xyz
     skip-cert-verify: true
-    ws-opts:
-      path: /oooo
-      headers:
-        host: ocbc.com
     ip-version: dual
-    udp: true
     alterId: 2
     cipher: auto
-  - name: 🇺🇸_US_美国_1
-    type: trojan
-    server: 1sdfghjk.890602.xyz
-    port: 443
-    network: ws
-    password: 5453ae26-250d-4e79-b4ec-016baf806865
-    sni: 1SdfghJk.890602.xyz
-    ws-opts:
-      path: /OYzPAeaZdXUq2d6J3gc4aj
-    ip-version: dual
-    udp: true
-  - name: 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-    type: trojan
-    server: 45.146.232.171
-    port: 34017
-    password: 07381e41-41fb-484d-9dc7-37d5a4b566bd
-    sni: q08m.vgraxiw73s.hasyaf.cn
-    ip-version: dual
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - name: 1|🇷🇺1 |  2.0MB/s
     type: vmess
-    server: v37.heduian.link
-    port: 30837
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    server: 195.58.49.84
+    port: 22027
+    uuid: dd93c8e7-dca0-4bb8-9491-46952160635f
     network: ws
-    sni: ocbc.com
-    ws-opts:
-      path: /oooo
+    tls: false
     ip-version: dual
-    udp: true
+    alterId: 0
+    cipher: auto
+  - name: 1|🇯🇵4 |  5.8MB/s
+    type: vmess
+    server: jp3.g2.moonbase.life
+    port: 35213
+    uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+    network: ws
+    tls: false
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: 1|🇺🇸12 |  5.6MB/s
+    type: vmess
+    server: tk.hzlt.tkddns.xyz
+    port: 22641
+    uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+    network: ws
+    tls: false
+    ip-version: dual
     alterId: 2
     cipher: auto
-  - name: 🇬🇧_GB_英国_2
+  - name: 1|🇰🇷3+|++4.5MB%2fs
     type: ss
-    server: 85.234.65.100
-    port: 11359
-    password: XaAIkJjp
+    server: '@@222.112.15.141'
+    port: 8772
+    tls: false
+    password: qwerREWQ
     ip-version: dual
-    udp: true
+    cipher: aes-256-cfb
+  - name: 1|🇰🇷4+|++2.4MB%2fs
+    type: ss
+    server: 52.78.191.143
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇰🇷5+|++6.1MB%2fs
+    type: ss
+    server: 3.38.117.49
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇯🇵6+|++6.2MB%2fs
+    type: ss
+    server: 35.72.13.151
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇺🇸22+|++5.7MB%2fs
+    type: ss
+    server: 54.190.1.15
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇺🇸27 |  5.7MB/s
+    type: vmess
+    server: 38.102.235.36
+    port: 23602
+    uuid: 18b3b300-7bc4-4ee6-8806-dbde3bba84ac
+    network: tcp
+    tls: false
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: 1|🌀13-VN+|++3.7MB%2fs
+    type: ss
+    server: 103.186.154.38
+    port: 38388
+    tls: false
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇯🇵9+|++4.3MB%2fs
+    type: ss
+    server: 43.207.103.11
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🌀14-+|++6.1MB%2fs
+    type: ss
+    server: '@@p235.panda004.net'
+    port: 8772
+    tls: false
+    password: qwerREWQ
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇺🇸31 |  5.8MB/s
+    type: vmess
+    server: tk.hzlt.tkddns.xyz
+    port: 22641
+    uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+    network: ws
+    tls: true
+    servername: tk.hzlt.tkddns.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 2
+    cipher: auto
+  - name: 1|🇺🇸35 |  2.4MB/s
+    type: vmess
+    server: yymg02.haibo168.com
+    port: 443
+    uuid: e85aa4fe-5812-4356-e10e-b05840a6920d
+    network: ws
+    tls: true
+    servername: yymg02.haibo168.com
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: 1|🇺🇸42+|++5.6MB%2fs
+    type: ss
+    server: 44.248.72.70
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇯🇵11+|++5.3MB%2fs
+    type: ss
+    server: 18.181.173.99
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇰🇷9+|++5.9MB%2fs
+    type: ss
+    server: 54.180.248.37
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇺🇸45+|++1.7MB%2fs
+    type: ss
+    server: 54.184.71.212
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 1|🇯🇵14 |  5.7MB/s
+    type: vmess
+    server: jp4.vip2.g2.moonbase.life
+    port: 35244
+    uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+    network: ws
+    tls: true
+    servername: jp4.vip2.g2.moonbase.life
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: 1|🇭🇰10+|++3.8MB%2fs
+    type: ss
+    server: 114.132.40.118
+    port: 30018
+    tls: false
+    password: ffc75281-6c9a-4cd7-8af6-aaa12eb7496f
+    ip-version: dual
     cipher: aes-256-gcm
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
-    type: vmess
-    server: v36.heduian.link
-    port: 30836
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    network: ws
-    sni: ''
-    skip-cert-verify: true
-    ws-opts:
-      path: /oooo
-      headers:
-        host: baidu.com
+  - name: 1|🇰🇷10+|++4.5MB%2fs
+    type: ss
+    server: '@@p231.panda004.net'
+    port: 11389
+    tls: false
+    password: qwerREWQ
     ip-version: dual
-    udp: true
+    cipher: aes-256-cfb
+  - name: 1|🇺🇸53 |  1.8MB/s
+    type: vmess
+    server: tk.hzlt.tkddns.xyz
+    port: 22642
+    uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+    network: ws
+    tls: false
+    ip-version: dual
     alterId: 2
     cipher: auto
-  - name: 🇺🇸_US_美国_2
-    type: trojan
-    server: 172.67.204.22
-    port: 443
+  - name: 1|🇯🇵15 |  6.5MB/s
+    type: vmess
+    server: jp3.vip2.g2.moonbase.life
+    port: 35243
+    uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
     network: ws
-    password: 5453ae26-250d-4e79-b4ec-016baf806865
-    sni: 1SdfghJk.890602.xyz
-    ws-opts:
-      path: /OYzPAeaZdXUq2d6J3gc4aj
+    tls: true
+    servername: jp3.vip2.g2.moonbase.life
+    skip-cert-verify: true
     ip-version: dual
-    udp: true
-  - name: 🇮🇷_IR_伊朗
-    type: ss
-    server: 5.34.209.50
-    port: 58919
-    password: Wo7H7pfmmq0nxMRTSBYDj7
-    ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇨🇳_CN_中国
-    type: vmess
-    server: 1449f183-svhls0-t28b6o-ef48.cu.plebai.net
-    port: 5228
-    uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-    network: tcp
-    ip-version: dual
-    udp: true
     alterId: 0
     cipher: auto
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
-    type: vmess
-    server: 6a483e32-svfr40-t28b6o-ef48.cu.plebai.net
-    port: 5228
-    uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-    network: tcp
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: 🇨🇳_CN_中国->🏳️_unKnow_未知
-    type: vmess
-    server: 89936472-svdwg0-t28b6o-ef48.cu.plebai.net
-    port: 5228
-    uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-    network: tcp
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: 🇺🇸_US_美国_3
-    type: ss
-    server: 51.195.119.47
-    port: 1080
-    password: qXvO7zYU7KeaB0Md7DQLow
-    ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
+  - name: 11,12|香港4|@ripaojiedian
     type: trojan
-    server: 45.146.232.172
-    port: 46926
-    password: aa34901b-0877-4143-8e50-67de188e178a
-    sni: q08m.vgraxiw73s.hasyaf.cn
-    ip-version: dual
-    udp: true
-  - name: 🇺🇸_US_美国_4
-    type: trojan
-    server: 104.21.24.172
-    port: 443
-    network: ws
-    password: 53249200-30ff-436f-a032-0bb00605f8f9
-    sni: 3derty.852224.dpdns.org
-    skip-cert-verify: false
-    ws-opts:
-      path: /YPTDHLX8qjvTU5JqXZxjQ5ILc
-      headers:
-        host: 3derty.852224.dpdns.org
-    ip-version: dual
-    udp: true
-  - name: 🇳🇱_NL_荷兰
-    type: ss
-    server: 45.151.62.54
-    port: 28825
-    password: 0zyDRZ1XmNXaaCAN7KEA8a
-    ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
-    type: trojan
-    server: 45.146.232.171
-    port: 43592
-    password: 51a668c6-d1bb-4e7e-aca3-125349f779fd
-    sni: q08m.vgraxiw73s.hasyaf.cn
+    server: dozo01.flztjc.top
+    port: 8313
+    tls: true
+    password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+    sni: hk-13-568.flztjc.net
     skip-cert-verify: false
     ip-version: dual
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
+  - name: 11|🇭🇰 香港5|@ripaojiedian
     type: vmess
-    server: 87b134e3-svc1s0-t28b6o-ef48.cu.plebai.net
-    port: 5228
-    uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+    server: 183.236.51.38
+    port: 41291
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
     network: tcp
+    tls: false
     ip-version: dual
-    udp: true
     alterId: 0
     cipher: auto
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - name: 11|🇭🇰 香港6|@ripaojiedian
     type: vmess
-    server: v8.heduian.link
-    port: 30808
+    server: 120.198.71.214
+    port: 42375
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    network: tcp
+    tls: false
+    ip-version: dual
+    alterId: 64
+    cipher: auto
+  - name: 11,12|日本5|@ripaojiedian
+    type: vmess
+    server: jp3.g2.moonbase.life
+    port: 35213
+    uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+    network: ws
+    tls: true
+    servername: web.xcjs.info
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: 11,12|新加坡|@ripaojiedian
+    type: vmess
+    server: v12.heduian.link
+    port: 30812
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
-    sni: ''
-    skip-cert-verify: true
-    ws-opts:
-      path: /oooo
-      headers:
-        host: baidu.com
+    tls: false
     ip-version: dual
-    udp: true
     alterId: 2
     cipher: auto
-  - name: 🇷🇴_RO_罗马尼亚
-    type: ss
-    server: 89.44.197.181
-    port: 31348
-    password: oJ7xnUknEuMScM21clCyEit66JRhmZrArRSE0xeapGR24HqH
+  - name: 11|🇺🇸 美国|@ripaojiedian
+    type: vmess
+    server: 120.198.71.219
+    port: 44015
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    network: tcp
+    tls: false
     ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
+    alterId: 0
+    cipher: auto
+  - name: 11,12|美国3|@ripaojiedian
+    type: vmess
+    server: v7.heduian.link
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    network: ws
+    tls: false
+    ip-version: dual
+    alterId: 2
+    cipher: auto
+  - name: 11|🇰🇷+韩国特殊|%40ripaojiedian
+    type: ss
+    server: 54.213.242.191
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 11|🇸🇬+狮城特殊|%40ripaojiedian
+    type: ss
+    server: 13.125.152.108
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 11|🇻🇳+越南|%40ripaojiedian
+    type: ss
+    server: 103.186.154.21
+    port: 38388
+    tls: false
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    ip-version: dual
+    cipher: aes-256-cfb
+  - name: 13|CN_speednode_0021
+    type: trojan
+    server: sla.cn.964e995b760.gogodns.xin
+    port: 43497
+    tls: true
+    password: 78d4625c-4221-4496-ab62-729f0d05fa2c
+    sni: q08m.vgraxiw73s.hasyaf.cn
+    skip-cert-verify: true
+    ip-version: dual
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🏳️_unKnow_未知
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_4
-      - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇷🇴_RO_罗马尼亚
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
+      - 1|🌀2-PT+|++3.5MB%2fs
+      - 1|🇺🇸15 |  5.8MB/s
+      - 1|🇷🇺1 |  2.0MB/s
+      - 1|🇯🇵4 |  5.8MB/s
+      - 1|🇺🇸12 |  5.6MB/s
+      - 1|🇰🇷3+|++4.5MB%2fs
+      - 1|🇰🇷4+|++2.4MB%2fs
+      - 1|🇰🇷5+|++6.1MB%2fs
+      - 1|🇯🇵6+|++6.2MB%2fs
+      - 1|🇺🇸22+|++5.7MB%2fs
+      - 1|🇺🇸27 |  5.7MB/s
+      - 1|🌀13-VN+|++3.7MB%2fs
+      - 1|🇯🇵9+|++4.3MB%2fs
+      - 1|🌀14-+|++6.1MB%2fs
+      - 1|🇺🇸31 |  5.8MB/s
+      - 1|🇺🇸35 |  2.4MB/s
+      - 1|🇺🇸42+|++5.6MB%2fs
+      - 1|🇯🇵11+|++5.3MB%2fs
+      - 1|🇰🇷9+|++5.9MB%2fs
+      - 1|🇺🇸45+|++1.7MB%2fs
+      - 1|🇯🇵14 |  5.7MB/s
+      - 1|🇭🇰10+|++3.8MB%2fs
+      - 1|🇰🇷10+|++4.5MB%2fs
+      - 1|🇺🇸53 |  1.8MB/s
+      - 1|🇯🇵15 |  6.5MB/s
+      - 11,12|香港4|@ripaojiedian
+      - 11|🇭🇰 香港5|@ripaojiedian
+      - 11|🇭🇰 香港6|@ripaojiedian
+      - 11,12|日本5|@ripaojiedian
+      - 11,12|新加坡|@ripaojiedian
+      - 11|🇺🇸 美国|@ripaojiedian
+      - 11,12|美国3|@ripaojiedian
+      - 11|🇰🇷+韩国特殊|%40ripaojiedian
+      - 11|🇸🇬+狮城特殊|%40ripaojiedian
+      - 11|🇻🇳+越南|%40ripaojiedian
+      - 13|CN_speednode_0021
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
     proxies:
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🏳️_unKnow_未知
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_4
-      - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇷🇴_RO_罗马尼亚
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
+      - 1|🌀2-PT+|++3.5MB%2fs
+      - 1|🇺🇸15 |  5.8MB/s
+      - 1|🇷🇺1 |  2.0MB/s
+      - 1|🇯🇵4 |  5.8MB/s
+      - 1|🇺🇸12 |  5.6MB/s
+      - 1|🇰🇷3+|++4.5MB%2fs
+      - 1|🇰🇷4+|++2.4MB%2fs
+      - 1|🇰🇷5+|++6.1MB%2fs
+      - 1|🇯🇵6+|++6.2MB%2fs
+      - 1|🇺🇸22+|++5.7MB%2fs
+      - 1|🇺🇸27 |  5.7MB/s
+      - 1|🌀13-VN+|++3.7MB%2fs
+      - 1|🇯🇵9+|++4.3MB%2fs
+      - 1|🌀14-+|++6.1MB%2fs
+      - 1|🇺🇸31 |  5.8MB/s
+      - 1|🇺🇸35 |  2.4MB/s
+      - 1|🇺🇸42+|++5.6MB%2fs
+      - 1|🇯🇵11+|++5.3MB%2fs
+      - 1|🇰🇷9+|++5.9MB%2fs
+      - 1|🇺🇸45+|++1.7MB%2fs
+      - 1|🇯🇵14 |  5.7MB/s
+      - 1|🇭🇰10+|++3.8MB%2fs
+      - 1|🇰🇷10+|++4.5MB%2fs
+      - 1|🇺🇸53 |  1.8MB/s
+      - 1|🇯🇵15 |  6.5MB/s
+      - 11,12|香港4|@ripaojiedian
+      - 11|🇭🇰 香港5|@ripaojiedian
+      - 11|🇭🇰 香港6|@ripaojiedian
+      - 11,12|日本5|@ripaojiedian
+      - 11,12|新加坡|@ripaojiedian
+      - 11|🇺🇸 美国|@ripaojiedian
+      - 11,12|美国3|@ripaojiedian
+      - 11|🇰🇷+韩国特殊|%40ripaojiedian
+      - 11|🇸🇬+狮城特殊|%40ripaojiedian
+      - 11|🇻🇳+越南|%40ripaojiedian
+      - 13|CN_speednode_0021
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🏳️_unKnow_未知
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_4
-      - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇷🇴_RO_罗马尼亚
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
+      - 1|🌀2-PT+|++3.5MB%2fs
+      - 1|🇺🇸15 |  5.8MB/s
+      - 1|🇷🇺1 |  2.0MB/s
+      - 1|🇯🇵4 |  5.8MB/s
+      - 1|🇺🇸12 |  5.6MB/s
+      - 1|🇰🇷3+|++4.5MB%2fs
+      - 1|🇰🇷4+|++2.4MB%2fs
+      - 1|🇰🇷5+|++6.1MB%2fs
+      - 1|🇯🇵6+|++6.2MB%2fs
+      - 1|🇺🇸22+|++5.7MB%2fs
+      - 1|🇺🇸27 |  5.7MB/s
+      - 1|🌀13-VN+|++3.7MB%2fs
+      - 1|🇯🇵9+|++4.3MB%2fs
+      - 1|🌀14-+|++6.1MB%2fs
+      - 1|🇺🇸31 |  5.8MB/s
+      - 1|🇺🇸35 |  2.4MB/s
+      - 1|🇺🇸42+|++5.6MB%2fs
+      - 1|🇯🇵11+|++5.3MB%2fs
+      - 1|🇰🇷9+|++5.9MB%2fs
+      - 1|🇺🇸45+|++1.7MB%2fs
+      - 1|🇯🇵14 |  5.7MB/s
+      - 1|🇭🇰10+|++3.8MB%2fs
+      - 1|🇰🇷10+|++4.5MB%2fs
+      - 1|🇺🇸53 |  1.8MB/s
+      - 1|🇯🇵15 |  6.5MB/s
+      - 11,12|香港4|@ripaojiedian
+      - 11|🇭🇰 香港5|@ripaojiedian
+      - 11|🇭🇰 香港6|@ripaojiedian
+      - 11,12|日本5|@ripaojiedian
+      - 11,12|新加坡|@ripaojiedian
+      - 11|🇺🇸 美国|@ripaojiedian
+      - 11,12|美国3|@ripaojiedian
+      - 11|🇰🇷+韩国特殊|%40ripaojiedian
+      - 11|🇸🇬+狮城特殊|%40ripaojiedian
+      - 11|🇻🇳+越南|%40ripaojiedian
+      - 13|CN_speednode_0021
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🏳️_unKnow_未知
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_4
-      - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇷🇴_RO_罗马尼亚
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
+      - 1|🌀2-PT+|++3.5MB%2fs
+      - 1|🇺🇸15 |  5.8MB/s
+      - 1|🇷🇺1 |  2.0MB/s
+      - 1|🇯🇵4 |  5.8MB/s
+      - 1|🇺🇸12 |  5.6MB/s
+      - 1|🇰🇷3+|++4.5MB%2fs
+      - 1|🇰🇷4+|++2.4MB%2fs
+      - 1|🇰🇷5+|++6.1MB%2fs
+      - 1|🇯🇵6+|++6.2MB%2fs
+      - 1|🇺🇸22+|++5.7MB%2fs
+      - 1|🇺🇸27 |  5.7MB/s
+      - 1|🌀13-VN+|++3.7MB%2fs
+      - 1|🇯🇵9+|++4.3MB%2fs
+      - 1|🌀14-+|++6.1MB%2fs
+      - 1|🇺🇸31 |  5.8MB/s
+      - 1|🇺🇸35 |  2.4MB/s
+      - 1|🇺🇸42+|++5.6MB%2fs
+      - 1|🇯🇵11+|++5.3MB%2fs
+      - 1|🇰🇷9+|++5.9MB%2fs
+      - 1|🇺🇸45+|++1.7MB%2fs
+      - 1|🇯🇵14 |  5.7MB/s
+      - 1|🇭🇰10+|++3.8MB%2fs
+      - 1|🇰🇷10+|++4.5MB%2fs
+      - 1|🇺🇸53 |  1.8MB/s
+      - 1|🇯🇵15 |  6.5MB/s
+      - 11,12|香港4|@ripaojiedian
+      - 11|🇭🇰 香港5|@ripaojiedian
+      - 11|🇭🇰 香港6|@ripaojiedian
+      - 11,12|日本5|@ripaojiedian
+      - 11,12|新加坡|@ripaojiedian
+      - 11|🇺🇸 美国|@ripaojiedian
+      - 11,12|美国3|@ripaojiedian
+      - 11|🇰🇷+韩国特殊|%40ripaojiedian
+      - 11|🇸🇬+狮城特殊|%40ripaojiedian
+      - 11|🇻🇳+越南|%40ripaojiedian
+      - 13|CN_speednode_0021
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🏳️_unKnow_未知
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_4
-      - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇷🇴_RO_罗马尼亚
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
+      - 1|🌀2-PT+|++3.5MB%2fs
+      - 1|🇺🇸15 |  5.8MB/s
+      - 1|🇷🇺1 |  2.0MB/s
+      - 1|🇯🇵4 |  5.8MB/s
+      - 1|🇺🇸12 |  5.6MB/s
+      - 1|🇰🇷3+|++4.5MB%2fs
+      - 1|🇰🇷4+|++2.4MB%2fs
+      - 1|🇰🇷5+|++6.1MB%2fs
+      - 1|🇯🇵6+|++6.2MB%2fs
+      - 1|🇺🇸22+|++5.7MB%2fs
+      - 1|🇺🇸27 |  5.7MB/s
+      - 1|🌀13-VN+|++3.7MB%2fs
+      - 1|🇯🇵9+|++4.3MB%2fs
+      - 1|🌀14-+|++6.1MB%2fs
+      - 1|🇺🇸31 |  5.8MB/s
+      - 1|🇺🇸35 |  2.4MB/s
+      - 1|🇺🇸42+|++5.6MB%2fs
+      - 1|🇯🇵11+|++5.3MB%2fs
+      - 1|🇰🇷9+|++5.9MB%2fs
+      - 1|🇺🇸45+|++1.7MB%2fs
+      - 1|🇯🇵14 |  5.7MB/s
+      - 1|🇭🇰10+|++3.8MB%2fs
+      - 1|🇰🇷10+|++4.5MB%2fs
+      - 1|🇺🇸53 |  1.8MB/s
+      - 1|🇯🇵15 |  6.5MB/s
+      - 11,12|香港4|@ripaojiedian
+      - 11|🇭🇰 香港5|@ripaojiedian
+      - 11|🇭🇰 香港6|@ripaojiedian
+      - 11,12|日本5|@ripaojiedian
+      - 11,12|新加坡|@ripaojiedian
+      - 11|🇺🇸 美国|@ripaojiedian
+      - 11,12|美国3|@ripaojiedian
+      - 11|🇰🇷+韩国特殊|%40ripaojiedian
+      - 11|🇸🇬+狮城特殊|%40ripaojiedian
+      - 11|🇻🇳+越南|%40ripaojiedian
+      - 13|CN_speednode_0021
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🏳️_unKnow_未知
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_4
-      - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇷🇴_RO_罗马尼亚
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
+      - 1|🌀2-PT+|++3.5MB%2fs
+      - 1|🇺🇸15 |  5.8MB/s
+      - 1|🇷🇺1 |  2.0MB/s
+      - 1|🇯🇵4 |  5.8MB/s
+      - 1|🇺🇸12 |  5.6MB/s
+      - 1|🇰🇷3+|++4.5MB%2fs
+      - 1|🇰🇷4+|++2.4MB%2fs
+      - 1|🇰🇷5+|++6.1MB%2fs
+      - 1|🇯🇵6+|++6.2MB%2fs
+      - 1|🇺🇸22+|++5.7MB%2fs
+      - 1|🇺🇸27 |  5.7MB/s
+      - 1|🌀13-VN+|++3.7MB%2fs
+      - 1|🇯🇵9+|++4.3MB%2fs
+      - 1|🌀14-+|++6.1MB%2fs
+      - 1|🇺🇸31 |  5.8MB/s
+      - 1|🇺🇸35 |  2.4MB/s
+      - 1|🇺🇸42+|++5.6MB%2fs
+      - 1|🇯🇵11+|++5.3MB%2fs
+      - 1|🇰🇷9+|++5.9MB%2fs
+      - 1|🇺🇸45+|++1.7MB%2fs
+      - 1|🇯🇵14 |  5.7MB/s
+      - 1|🇭🇰10+|++3.8MB%2fs
+      - 1|🇰🇷10+|++4.5MB%2fs
+      - 1|🇺🇸53 |  1.8MB/s
+      - 1|🇯🇵15 |  6.5MB/s
+      - 11,12|香港4|@ripaojiedian
+      - 11|🇭🇰 香港5|@ripaojiedian
+      - 11|🇭🇰 香港6|@ripaojiedian
+      - 11,12|日本5|@ripaojiedian
+      - 11,12|新加坡|@ripaojiedian
+      - 11|🇺🇸 美国|@ripaojiedian
+      - 11,12|美国3|@ripaojiedian
+      - 11|🇰🇷+韩国特殊|%40ripaojiedian
+      - 11|🇸🇬+狮城特殊|%40ripaojiedian
+      - 11|🇻🇳+越南|%40ripaojiedian
+      - 13|CN_speednode_0021
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -459,28 +697,45 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇬🇧_GB_英国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_1
-      - 🇳🇱_NL_荷兰->🇦🇺_AU_澳大利亚
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国_2
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_2
-      - 🇮🇷_IR_伊朗
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇨🇳_CN_中国->🏳️_unKnow_未知
-      - 🇺🇸_US_美国_3
-      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国_2
-      - 🇺🇸_US_美国_4
-      - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-      - 🇷🇴_RO_罗马尼亚
+      - 6元高速机场：cczzuu.top
+      - 重度用户推荐使用机场
+      - 免费节点可能会泄漏访问记录
+      - 1|🌀2-PT+|++3.5MB%2fs
+      - 1|🇺🇸15 |  5.8MB/s
+      - 1|🇷🇺1 |  2.0MB/s
+      - 1|🇯🇵4 |  5.8MB/s
+      - 1|🇺🇸12 |  5.6MB/s
+      - 1|🇰🇷3+|++4.5MB%2fs
+      - 1|🇰🇷4+|++2.4MB%2fs
+      - 1|🇰🇷5+|++6.1MB%2fs
+      - 1|🇯🇵6+|++6.2MB%2fs
+      - 1|🇺🇸22+|++5.7MB%2fs
+      - 1|🇺🇸27 |  5.7MB/s
+      - 1|🌀13-VN+|++3.7MB%2fs
+      - 1|🇯🇵9+|++4.3MB%2fs
+      - 1|🌀14-+|++6.1MB%2fs
+      - 1|🇺🇸31 |  5.8MB/s
+      - 1|🇺🇸35 |  2.4MB/s
+      - 1|🇺🇸42+|++5.6MB%2fs
+      - 1|🇯🇵11+|++5.3MB%2fs
+      - 1|🇰🇷9+|++5.9MB%2fs
+      - 1|🇺🇸45+|++1.7MB%2fs
+      - 1|🇯🇵14 |  5.7MB/s
+      - 1|🇭🇰10+|++3.8MB%2fs
+      - 1|🇰🇷10+|++4.5MB%2fs
+      - 1|🇺🇸53 |  1.8MB/s
+      - 1|🇯🇵15 |  6.5MB/s
+      - 11,12|香港4|@ripaojiedian
+      - 11|🇭🇰 香港5|@ripaojiedian
+      - 11|🇭🇰 香港6|@ripaojiedian
+      - 11,12|日本5|@ripaojiedian
+      - 11,12|新加坡|@ripaojiedian
+      - 11|🇺🇸 美国|@ripaojiedian
+      - 11,12|美国3|@ripaojiedian
+      - 11|🇰🇷+韩国特殊|%40ripaojiedian
+      - 11|🇸🇬+狮城特殊|%40ripaojiedian
+      - 11|🇻🇳+越南|%40ripaojiedian
+      - 13|CN_speednode_0021
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
