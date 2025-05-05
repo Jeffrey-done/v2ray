@@ -1,24 +1,227 @@
 proxies:
-  - alterId: '64'
+  - name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 4.3MB/s|Netflix|Openai"
+    password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+    port: 443
+    server: 26094b79-svqv40-swy6li-tni2.sv.plebai.net
+    tls: true
+    type: http
+    username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+    sni: 26094b79-svqv40-swy6li-tni2.sv.plebai.net
+  - alterId: 0
     cipher: auto
-    name: "\U0001F1ED\U0001F1F0香港1 | ⬇️ 6.1MB/s|0%|Netflix|Disney|Youtube"
+    name: "\U0001F1FA\U0001F1F8美国2 | ⬇️ 4.2MB/s|0%|Netflix|Openai"
     network: tcp
-    port: 43302
-    server: 183.236.51.38
+    port: 5229
+    server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
+    type: vmess
+    uuid: 5cfde7fa-ed1b-11ef-b5d9-f23c9164ca5d
+  - down: ''
+    fingerprint: ''
+    name: "\U0001F1FA\U0001F1F8美国3 | ⬇️ 4.8MB/s|46%|Netflix|Openai"
+    obfs: ''
+    obfs-password: ''
+    password: dongtaiwang.com
+    port: 65232
+    server: 108.181.5.130
+    skip-cert-verify: true
+    sni: apple.com
+    type: hysteria2
+    up: ''
+  - client-fingerprint: chrome
+    fingerprint: ''
+    name: "\U0001F1FA\U0001F1F8美国4 | ⬇️ 6.4MB/s|0%|Netflix|Disney|Openai|Gemini"
+    network: ws
+    port: 8443
+    server: 154.92.9.2
+    tls: true
+    type: vless
+    udp: false
+    uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
+    ws-opts:
+      headers:
+        Host: txmt.conetcdata.dpdns.org
+      path: /?ed
+    servername: txmt.conetcdata.dpdns.org
+  - auth: 569dda85-bc76-4f8b-ae03-609d97f9e76c
+    delay: 1185
+    name: "\U0001F1FA\U0001F1F8美国5 | ⬇️ 4.9MB/s|Netflix|Openai"
+    password: 569dda85-bc76-4f8b-ae03-609d97f9e76c
+    port: 5750
+    server: 143.198.48.33
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: hysteria2
+  - auth: d9fe1f5e-8f0f-41b6-95f6-d90aa0404924
+    delay: 1962
+    name: "\U0001F1FA\U0001F1F8美国6 | ⬇️ 4.5MB/s|57%|Netflix|Openai"
+    password: d9fe1f5e-8f0f-41b6-95f6-d90aa0404924
+    port: 45551
+    server: sub-us-1.yangxiansheng.online
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: hysteria2
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8美国7 | ⬇️ 4.4MB/s|Netflix|Openai"
+    port: 443
+    server: 12237308-svn5s0-t28b6o-ef48.sj.gotochinatown.net
+    tls: true
+    type: socks5
+    sni: 12237308-svn5s0-t28b6o-ef48.sj.gotochinatown.net
+  - name: "\U0001F1FA\U0001F1F8美国8 | ⬇️ 5.7MB/s|0%|Netflix|Openai"
+    password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+    port: 443
+    server: fddc5997-svqv40-t1bnjq-1krtb.sv.plebai.net
+    tls: true
+    type: http
+    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+    sni: fddc5997-svqv40-t1bnjq-1krtb.sv.plebai.net
+  - name: "\U0001F1FA\U0001F1F8美国9 | ⬇️ 4.3MB/s|0%|Netflix|Openai"
+    port: 443
+    server: 21da44f3-svqv40-t1bnjq-1krtb.sj.gotochinatown.net
+    tls: true
+    type: socks5
+    sni: 21da44f3-svqv40-t1bnjq-1krtb.sj.gotochinatown.net
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1F8\U0001F1EC新加坡1 | ⬇️ 7.1MB/s|Disney|Youtube|Gemini"
+    port: 17231
+    server: 5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com
+    tls: false
+    type: vmess
+    uuid: b19e8df4-fba9-11ea-9777-f23c9164ca5d
+  - name: "\U0001F1FA\U0001F1F8美国10 | ⬇️ 4.0MB/s|0%|Netflix|Openai"
+    port: 443
+    server: 57487dd3-svp0g0-t28b6o-ef48.sj.gotochinatown.net
+    tls: true
+    type: socks5
+    sni: 57487dd3-svp0g0-t28b6o-ef48.sj.gotochinatown.net
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1F8\U0001F1EC新加坡2 | ⬇️ 5.4MB/s|Gemini"
+    port: 17231
+    server: a0a40de3-suk9s0-t7mt0p-1sllg.cm5.p5pv.com
+    tls: false
+    type: vmess
+    uuid: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
+  - name: "\U0001F1EB\U0001F1F7法国1 | ⬇️ 4.0MB/s|14%|Netflix|Openai"
+    network: ws
+    port: 8080
+    server: 104.26.14.85
+    type: vless
+    udp: true
+    uuid: 0eb83f3e-7b95-427a-8952-abedfca1869f
+    ws-opts:
+      headers:
+        Host: QW.VU6d72nt9y.zULaiR.orG.
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/43.0.2357.65 Safari/537.36
+      path: /?ed=2048
+    xudp: true
+  - client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: >-
+        CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+    name: "\U0001F1EC\U0001F1E7英国1 | ⬇️ 4.6MB/s|0%|Netflix|Disney|Youtube|Openai"
+    network: grpc
+    port: 2030
+    reality-opts:
+      public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+      short-id: 7fe29733
+    server: ns7.esfahansiman.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 8b9d2d65-611c-405f-a32d-3ea674616f60
+    xudp: true
+    servername: refersion.com
+  - client-fingerprint: chrome
+    name: "\U0001F300其他1-BG | ⬇️ 4.6MB/s|30%|Netflix|Youtube|Openai"
+    network: ws
+    port: 443
+    server: 104.21.69.44
+    tls: true
+    type: vless
+    udp: true
+    uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
+    ws-opts:
+      headers:
+        Host: cr77.hedieh.dpdns.org
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/31.0.1650.57 Safari/537.36
+      path: /
+    xudp: true
+    servername: cr77.hedieh.dpdns.org
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8美国11 | ⬇️ 4.3MB/s|38%|Netflix|Openai"
+    network: ws
+    password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
+    port: 443
+    server: 104.21.80.1
+    skip-cert-verify: false
+    sni: 8ui.191262.xyz
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/46.0.2490.80 Safari/537.36
+      path: /tvowuLtlha3zxRV9PS
+  - client-fingerprint: chrome
+    name: "\U0001F1EC\U0001F1E7英国2 | ⬇️ 3.9MB/s|0%|Openai"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c
+      short-id: 7e39db0c
+    server: 213.21.245.83
+    tls: true
+    type: vless
+    udp: true
+    uuid: be2b3c86-a3bf-4111-9968-6162071ac945
+    xudp: true
+    servername: tgju.org
+  - alpn:
+      - h3
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EA德国1 | ⬇️ 5.6MB/s|22%|Netflix|Youtube|Openai"
+    network: ws
+    port: 8443
+    server: tunnelvps.boshrachoice.ir
+    tls: true
+    type: vless
+    udp: true
+    uuid: faeed0d1-d60f-460c-a7ac-d50e6d1157cf
+    ws-opts:
+      headers:
+        Host: ''
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/56.0.2924.87 Safari/537.36
+      path: >-
+        /JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___JOIN___TEL___@One_Shop_Official___?ed=2048
+    xudp: true
+    servername: tunnelvps.boshrachoice.ir
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    name: "\U0001F1EF\U0001F1F5日本1 | ⬇️ 7.0MB/s|11%|Disney|Youtube|Openai|Gemini"
+    network: tcp
+    port: 17233
+    server: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
     skip-cert-verify: false
     tls: false
     type: vmess
     udp: true
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    uuid: 9eeeea88-f37b-11ed-bd3d-f23c9164ca5d
     xudp: true
-  - name: "\U0001F1FA\U0001F1F8美国1 | ⬇️ 4.3MB/s|37%|Netflix|Openai"
-    password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-    port: 443
-    server: c8564247-svp0g0-swy6li-tni2.los.gotochinatown.net
-    tls: true
-    type: http
-    username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-    sni: c8564247-svp0g0-swy6li-tni2.los.gotochinatown.net
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -557,4 +760,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-05-04 09:20:17
+# 2025-05-05 09:16:35
