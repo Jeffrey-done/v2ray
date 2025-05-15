@@ -1,5 +1,5 @@
 {
-  "yaml": "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml",
+  "yaml": "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml",
   "base64": "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt",
   "mihomo": "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml",
   "no_proxy_yaml": "",
