@@ -4,7 +4,7 @@
   "bestclash": {
     "github_link": "https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml",
     "mirror_link": "https://ghfile.geekertao.top/https://github.com/PuddinCat/BestClash/blob/main/proxies.yaml",
-    "scrape_time": "2025-05-18 01:53:15",
+    "scrape_time": "2025-05-19 01:52:33",
     "source_url": "https://github.com/PuddinCat/BestClash",
     "description": "免费Clash代理！自动从网上爬取最快的代理，每30分钟更新！"
   },
@@ -12,28 +12,64 @@
     "title": "周润发公益免费v2ray节点订阅",
     "description": "每2小时更新一次，提供免费v2ray节点订阅",
     "yaml_links": [
-      "https://raw.githubusercontent.com/shaoyouvip/free/main/all.yaml"
+      "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml",
+      "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml"
     ],
     "base64_links": [
-      "https://raw.githubusercontent.com/shaoyouvip/free/main/base64.txt"
+      "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt"
     ],
     "mihomo_links": [
       "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml"
     ],
     "no_proxy_links": {
-      "yaml": [
-        "https://d.aizrf.com/vless-all"
-      ],
-      "base64": [
-        "https://d.aizrf.com/vless-base64"
-      ],
-      "mihomo": [
-        "https://d.aizrf.com/vless-mihomo"
-      ]
+      "yaml": [],
+      "base64": [],
+      "mihomo": []
     },
-    "clients": [],
-    "scrape_time": "2025-05-18 01:53:11",
-    "source_url": "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/README.md",
+    "clients": [
+      {
+        "name": "SingBox",
+        "platform": "Mac/Linux/Android/Ios",
+        "url": "https://sing-box.sagernet.org/clients/https://sing-box.sagernet.org/clients/"
+      },
+      {
+        "name": "FlClash",
+        "platform": "Mac/Linux/Windows/Android",
+        "url": "https://github.com/chen08209/FlClashhttps://github.com/chen08209/FlClash"
+      },
+      {
+        "name": "Clash Verge",
+        "platform": "Mac/Linux/Windows",
+        "url": "https://github.com/clash-verge-rev/clash-verge-revhttps://github.com/clash-verge-rev/clash-verge-rev"
+      },
+      {
+        "name": "Clash Meta Android",
+        "platform": "Android",
+        "url": "https://github.com/MetaCubeX/ClashMetaForAndroidhttps://github.com/MetaCubeX/ClashMetaForAndroid"
+      },
+      {
+        "name": "ClashX Meta",
+        "platform": "Mac",
+        "url": "https://github.com/MetaCubeX/ClashX.Metahttps://github.com/MetaCubeX/ClashX.Meta"
+      },
+      {
+        "name": "V2RayN",
+        "platform": "Windows",
+        "url": "https://github.com/2dust/v2rayNhttps://github.com/2dust/v2rayN"
+      },
+      {
+        "name": "V2RayNG",
+        "platform": "Android",
+        "url": "https://github.com/2dust/v2rayNGhttps://github.com/2dust/v2rayNG"
+      },
+      {
+        "name": "V2RayU",
+        "platform": "Mac",
+        "url": "https://github.com/yanue/V2rayUhttps://github.com/yanue/V2rayU"
+      }
+    ],
+    "scrape_time": "2025-05-19 01:52:29",
+    "source_url": "[https://github.com/yanue/V2rayU](https://github.com/yanue/V2rayU)",
     "update_interval": "2小时"
   },
   "ripao": {
@@ -44,8 +80,8 @@
     "clash_mirror": "https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
     "v2ray_mirror": "https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
     "clash_available": true,
-    "v2ray_available": false,
-    "scrape_time": "2025-05-18 01:53:12",
+    "v2ray_available": true,
+    "scrape_time": "2025-05-19 01:52:30",
     "update_interval": "日更新"
   },
   "v2rayc": {
@@ -53,23 +89,23 @@
     "date": "20250514",
     "update_time": "2025-05-14 09:42:09",
     "clash_links": [
-      "https://v2rayc.github.io/uploads/2025/05/1-20250514.yaml",
-      "https://v2rayc.github.io/uploads/2025/05/0-20250514.yaml",
       "https://v2rayc.github.io/uploads/2025/05/4-20250514.yaml",
       "https://v2rayc.github.io/uploads/2025/05/3-20250514.yaml",
-      "https://v2rayc.github.io/uploads/2025/05/2-20250514.yaml"
+      "https://v2rayc.github.io/uploads/2025/05/2-20250514.yaml",
+      "https://v2rayc.github.io/uploads/2025/05/0-20250514.yaml",
+      "https://v2rayc.github.io/uploads/2025/05/1-20250514.yaml"
     ],
     "v2ray_links": [
+      "https://v2rayc.github.io/uploads/2025/05/3-20250514.txt",
       "https://v2rayc.github.io/uploads/2025/05/0-20250514.txt",
       "https://v2rayc.github.io/uploads/2025/05/2-20250514.txt",
-      "https://v2rayc.github.io/uploads/2025/05/4-20250514.txt",
       "https://v2rayc.github.io/uploads/2025/05/1-20250514.txt",
-      "https://v2rayc.github.io/uploads/2025/05/3-20250514.txt"
+      "https://v2rayc.github.io/uploads/2025/05/4-20250514.txt"
     ],
     "singbox_links": [
       "https://v2rayc.github.io/uploads/2025/05/20250514.json"
     ],
-    "scrape_time": "2025-05-18 01:53:14",
+    "scrape_time": "2025-05-19 01:52:31",
     "source_url": "https://github.com/v2rayc/v2rayc.github.io/blob/main/README.md"
   }
 }
