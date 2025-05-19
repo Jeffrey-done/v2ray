@@ -1,8 +1,8 @@
 {
-  "yaml": "https://raw.githubusercontent.com/shaoyouvip/free/main/all.yaml",
-  "base64": "https://raw.githubusercontent.com/shaoyouvip/free/main/base64.txt",
+  "yaml": "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml",
+  "base64": "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/base64.txt",
   "mihomo": "https://raw.githubusercontent.com/shaoyouvip/free/main/mihomo.yaml",
-  "no_proxy_yaml": "https://d.aizrf.com/vless-all",
-  "no_proxy_base64": "https://d.aizrf.com/vless-base64",
-  "no_proxy_mihomo": "https://d.aizrf.com/vless-mihomo"
+  "no_proxy_yaml": "",
+  "no_proxy_base64": "",
+  "no_proxy_mihomo": ""
 }
