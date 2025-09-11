@@ -4,7 +4,7 @@
   "bestclash": {
     "github_link": "https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml",
     "mirror_link": "https://ghfile.geekertao.top/https://github.com/PuddinCat/BestClash/blob/main/proxies.yaml",
-    "scrape_time": "2025-09-10 01:37:46",
+    "scrape_time": "2025-09-11 01:40:08",
     "source_url": "https://github.com/PuddinCat/BestClash",
     "description": "免费Clash代理！自动从网上爬取最快的代理，每30分钟更新！"
   },
@@ -68,7 +68,7 @@
         "url": "https://github.com/yanue/V2rayUhttps://github.com/yanue/V2rayU"
       }
     ],
-    "scrape_time": "2025-09-10 01:37:43",
+    "scrape_time": "2025-09-11 01:40:05",
     "source_url": "[https://github.com/yanue/V2rayU](https://github.com/yanue/V2rayU)",
     "update_interval": "2小时"
   },
@@ -81,31 +81,31 @@
     "v2ray_mirror": "https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
     "clash_available": true,
     "v2ray_available": true,
-    "scrape_time": "2025-09-10 01:37:44",
+    "scrape_time": "2025-09-11 01:40:06",
     "update_interval": "日更新"
   },
   "v2rayc": {
-    "title": "9月4日→21.5M/S|免费节点Clash/SSR/V2rayC订阅链接",
-    "date": "20250904",
-    "update_time": "2025-09-04 09:47:23",
+    "title": "9月10日→22.2M/S|免费节点Clash/SSR/V2rayC订阅链接",
+    "date": "20250910",
+    "update_time": "2025-09-10 10:03:05",
     "clash_links": [
-      "https://v2rayc.github.io/uploads/2025/09/0-20250904.yaml",
-      "https://v2rayc.github.io/uploads/2025/09/2-20250904.yaml",
-      "https://v2rayc.github.io/uploads/2025/09/4-20250904.yaml",
-      "https://v2rayc.github.io/uploads/2025/09/3-20250904.yaml",
-      "https://v2rayc.github.io/uploads/2025/09/1-20250904.yaml"
+      "https://v2rayc.github.io/uploads/2025/09/0-20250910.yaml",
+      "https://v2rayc.github.io/uploads/2025/09/2-20250910.yaml",
+      "https://v2rayc.github.io/uploads/2025/09/3-20250910.yaml",
+      "https://v2rayc.github.io/uploads/2025/09/1-20250910.yaml",
+      "https://v2rayc.github.io/uploads/2025/09/4-20250910.yaml"
     ],
     "v2ray_links": [
-      "https://v2rayc.github.io/uploads/2025/09/1-20250904.txt",
-      "https://v2rayc.github.io/uploads/2025/09/0-20250904.txt",
-      "https://v2rayc.github.io/uploads/2025/09/3-20250904.txt",
-      "https://v2rayc.github.io/uploads/2025/09/2-20250904.txt",
-      "https://v2rayc.github.io/uploads/2025/09/4-20250904.txt"
+      "https://v2rayc.github.io/uploads/2025/09/1-20250910.txt",
+      "https://v2rayc.github.io/uploads/2025/09/0-20250910.txt",
+      "https://v2rayc.github.io/uploads/2025/09/3-20250910.txt",
+      "https://v2rayc.github.io/uploads/2025/09/2-20250910.txt",
+      "https://v2rayc.github.io/uploads/2025/09/4-20250910.txt"
     ],
     "singbox_links": [
-      "https://v2rayc.github.io/uploads/2025/09/20250904.json"
+      "https://v2rayc.github.io/uploads/2025/09/20250910.json"
     ],
-    "scrape_time": "2025-09-10 01:37:44",
+    "scrape_time": "2025-09-11 01:40:06",
     "source_url": "https://github.com/v2rayc/v2rayc.github.io/blob/main/README.md"
   }
 }
