@@ -1,93 +1,167 @@
 proxies:
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_1|2.7MB/s"
-    network: ws
-    password: slch2024
-    port: 2096
-    server: 31.12.75.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/57.0.2987.133 Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - name: "\U0001F1FA\U0001F1F8US_2|2.2MB/s"
-    network: ws
-    password: slch2024
-    port: 2096
-    server: 194.36.55.195
-    skip-cert-verify: false
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        Host: ocost-dy.wmlefl.cc
-      path: "/Telegram\U0001F1E8\U0001F1F3"
-  - name: "\U0001F1EE\U0001F1F7IR_1|3.0MB/s"
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE_1|2.0MB/s"
     network: tcp
-    port: 46822
-    server: 89.44.242.222
-    type: vless
-    udp: true
-    uuid: 44aded6c-a012-452b-8e13-04d5f15a659f
-    xudp: true
-  - name: "\U0001F1EC\U0001F1E7GB_1|4.2MB/s"
-    network: ws
-    port: 16268
-    server: 138.68.129.37
-    type: vless
-    udp: true
-    uuid: 20f9a609-f802-4301-91d5-7e28cbe23be0
-    ws-opts:
-      headers:
-        Host: ''
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/59.0.3071.115 Safari/537.36
-      path: /
-    xudp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1E9\U0001F1EADE_1|2.2MB/s"
-    network: ws
     port: 443
-    server: d13.zulahost.us
+    reality-opts:
+      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      short-id: ''
+    server: 91.219.23.129
     tls: true
     type: vless
     udp: true
-    uuid: d4a65f70-ccc3-45a0-984d-0c283dff38ff
+    uuid: 06aa7bd7-88d1-445b-bd7b-17d3472a45a6
+    xudp: true
+    servername: www.bing.com
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_1|2.6MB/s"
+    network: grpc
+    port: 25365
+    server: 141.227.178.165
+    type: vless
+    udp: true
+    uuid: 919526f8-86c8-4f43-b5f7-91eea1368bad
+    xudp: true
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1EA\U0001F1F8ES_1|2.9MB/s"
+    password: jHH8Kgfd6IXpvx2svCVG1H
+    port: 8443
+    server: 5.188.181.41
+    type: ss
+    udp: true
+  - name: "\U0001F1E9\U0001F1EADE_2|5.0MB/s"
+    network: ws
+    port: 2082
+    server: www.speedtest.net
+    type: vless
+    udp: true
+    uuid: 8517c298-f774-48cc-96bf-cad9844aa1a2
     ws-opts:
       headers:
-        Host: d13.zulahost.us
+        Host: >-
+          novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/55.0.2883.87 Safari/537.36
-      path: /40602/wsgoogle
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/52.0.2743.116 Safari/537.36
+      path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2082
     xudp: true
-    servername: d13.zulahost.us
-  - alterId: 0
-    cipher: auto
-    grpc-opts:
-      grpc-service-name: '@Ghostray_NG'
-    name: "\U0001F1F3\U0001F1F1NL_1|2.8MB/s"
-    network: grpc
-    port: 8880
-    server: s3.ghostrke.sbs
-    skip-cert-verify: false
-    tls: false
-    type: vmess
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1E9\U0001F1EADE_3|4.7MB/s"
+    password: Yx2sF4XRHe7rS8Ng6elm7B
+    port: 8443
+    server: 83.172.138.149
+    type: ss
     udp: true
-    uuid: 7124cc30-b751-47c5-b87a-02db8c67ce64
+  - client-fingerprint: randomized
+    name: "\U0001F1E9\U0001F1EADE_4|2.1MB/s"
+    network: ws
+    port: 443
+    server: 77.73.131.188
+    tls: true
+    type: vless
+    udp: true
+    uuid: e74b8b09-ed18-4a7c-96f8-175767797fd2
+    ws-opts:
+      headers:
+        Host: joss.krikkrik.tech
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/54.0.2840.71 Safari/537.36
+      path: /Free-VPN-CF-Geo-Project/AT2
+    xudp: true
+    servername: joss.krikkrik.tech
+  - name: "\U0001F1EC\U0001F1E7GB_1|3.0MB/s"
+    network: ws
+    port: 8443
+    server: bm.boulvarmoein.shop
+    type: vless
+    udp: true
+    uuid: v2rayng_76
+    ws-opts:
+      headers:
+        Host: bm.boulvarmoein.shop
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/57.0.2987.133 Safari/537.36
+      path: /Telegram@v2rayng_76=
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
     xudp: true
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F1EC\U0001F1E7GB_2|3.6MB/s"
+    name: "\U0001F1E8\U0001F1EDCH_1|5.2MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: AUg2h16X8xP5s7tnkcDuyfX5CBV7WvCoY48OKhbtQyw
+      short-id: 821bbc44dd7a4e15
+    server: S.bazicore.ir
+    tls: true
+    type: vless
+    udp: true
+    uuid: 7a2fba14-d7c3-6ca7-e557-44d66ba0dc08
+    xudp: true
+    servername: tgju.org
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1E9\U0001F1EADE_5|2.3MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      short-id: ''
+    server: deu316.unlocknet.org
+    tls: true
+    type: vless
+    udp: true
+    uuid: 77b3bda7-4ee3-4c99-bad1-a935f7e027c8
+    xudp: true
+    servername: www.bing.com
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EC\U0001F1E7GB_2|2.9MB/s"
+    network: grpc
+    port: 25365
+    server: 51.89.230.180
+    type: vless
+    udp: true
+    uuid: 72c17850-c1a8-4915-a437-45de2645a6e1
+    xudp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1F3\U0001F1F1NL_1|3.0MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
+      short-id: 16895459a2c7768d
+    server: 94.26.228.68
+    tls: true
+    type: vless
+    udp: true
+    uuid: 5475990d-e0ce-46ea-95e5-50f9e4879af9
+    xudp: true
+    servername: ru.sfasti.ru
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1EB\U0001F1EEFI_1|2.2MB/s"
+    password: Qcsukn6qSHlKiTnh08a9Cb
+    port: 8443
+    server: 94.237.105.27
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1EC\U0001F1E7GB_3|3.8MB/s"
     network: tcp
     port: 8081
     reality-opts:
@@ -100,347 +174,308 @@ proxies:
     uuid: f924939e-2d9a-46b7-a3c2-67a225b7c027
     xudp: true
     servername: yahoo.com
-  - cipher: aes-256-cfb
-    name: "\U0001F1F3\U0001F1F1NL_2|3.9MB/s"
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 51.15.17.169
-    type: ss
-    udp: true
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: firefox
-    name: "\U0001F1E9\U0001F1EADE_2|4.6MB/s"
-    network: ws
-    port: 443
-    server: www.speedtest.net
+  - client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EADE_6|4.0MB/s"
+    network: tcp
+    port: 33140
+    reality-opts:
+      public-key: BTsXykRA0mUv-PP6ncIQqjBMz_HRueLob9CNHT9QpGM
+      short-id: '53'
+    server: 91.107.245.212
     tls: true
     type: vless
     udp: true
-    uuid: telegram-id-Arfilter
-    ws-opts:
-      headers:
-        Host: ww.arfilter.blog
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
-          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84
-          Mobile Safari/537.36
-      path: >-
-        /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
+    uuid: 74e7c336-abf1-44ea-bffa-8a419224ee7a
     xudp: true
-    servername: ww.arfilter.blog
-  - name: "\U0001F1E9\U0001F1EADE_3|5.2MB/s"
-    network: ws
-    port: 8880
-    server: 172.66.40.99
+    servername: addons.mozilla.org
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1E9\U0001F1EADE_7|3.0MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      short-id: ''
+    server: deu316.unlocknet.org
+    tls: true
     type: vless
     udp: true
-    uuid: 7459af23-1cec-451c-9412-7d53a4836bd6
+    uuid: 06aa7bd7-88d1-445b-bd7b-17d3472a45a6
+    xudp: true
+    servername: www.bing.com
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE_8|4.7MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      short-id: ''
+    server: 91.219.23.90
+    tls: true
+    type: vless
+    udp: true
+    uuid: 06aa7bd7-88d1-445b-bd7b-17d3472a45a6
+    xudp: true
+    servername: www.bing.com
+  - grpc-opts:
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    name: "\U0001F1EB\U0001F1F7FR_2|2.5MB/s"
+    network: grpc
+    port: 25365
+    server: 141.227.180.211
+    type: vless
+    udp: true
+    uuid: 1375d9a1-dece-4bbb-8131-29e06afd8ca4
+    xudp: true
+  - client-fingerprint: chrome
+    name: "\U0001F1EB\U0001F1F7FR_3|4.3MB/s"
+    network: ws
+    port: 443
+    server: 172.67.170.107
+    tls: true
+    type: vless
+    udp: true
+    uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
     ws-opts:
       headers:
-        Host: >-
-          websocket.network.www.speedtest.net.flutter.dev.russia.python.elmahstyle.xyz.
+        Host: backhaxus.dh04.shop
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/54.0.2840.99 Safari/537.36
+      path: /
+    xudp: true
+    servername: backhaxus.dh04.shop
+  - client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: 9520vless
+    name: "\U0001F1E9\U0001F1EADE_9|3.7MB/s"
+    network: grpc
+    port: 9520
+    reality-opts:
+      public-key: 3EWvgfHUv-7aKL47dJL1WiIHY43aeWo8QUZRjzCw0RI
+      short-id: 6f84e8adb893b4bd
+    server: ab.iranlit.ir
+    tls: true
+    type: vless
+    udp: true
+    uuid: b8ee2e23-b026-4f40-a036-8b67c6e3c145
+    xudp: true
+    servername: refersion.com
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE_10|3.6MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      short-id: ''
+    server: 91.219.23.100
+    tls: true
+    type: vless
+    udp: true
+    uuid: 77b3bda7-4ee3-4c99-bad1-a935f7e027c8
+    xudp: true
+    servername: www.bing.com
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE_11|3.6MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      short-id: ''
+    server: 91.219.23.129
+    tls: true
+    type: vless
+    udp: true
+    uuid: 77b3bda7-4ee3-4c99-bad1-a935f7e027c8
+    xudp: true
+    servername: www.bing.com
+  - cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_1|2.7MB/s"
+    network: ws
+    port: 8080
+    server: 102.129.137.198
+    tls: false
+    type: vless
+    uuid: 48a33a13-ff8d-46b2-d073-a1181203f826
+    ws-opts:
+      path: /trigger/
+  - name: "\U0001F1E9\U0001F1EADE_12|3.6MB/s"
+    network: ws
+    port: 8080
+    server: 104.25.35.114
+    type: vless
+    udp: true
+    uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+    ws-opts:
+      headers:
+        Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/51.0.2704.103 Safari/537.36
+      path: /
+    xudp: true
+  - client-fingerprint: randomized
+    name: "\U0001F1F3\U0001F1F1NL_2|3.8MB/s"
+    network: ws
+    port: 443
+    server: 104.21.16.1
+    tls: true
+    type: vless
+    udp: true
+    uuid: cb796646-d528-4b96-9984-86dbceed95ad
+    ws-opts:
+      headers:
+        Host: DD3A34A9.bPB1-1TS.PaGeS.DEV
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/41.0.2272.101 Safari/537.36
+      path: /vpnAndroid2.vpnAndroid2.vpnAndroid2
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    servername: DD3A34A9.bPB1-1TS.PaGeS.DEV
+  - name: "\U0001F1FA\U0001F1F8US_2|2.0MB/s"
+    network: ws
+    port: 8880
+    server: 5.10.215.247
+    type: vless
+    udp: true
+    uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
+    ws-opts:
+      headers:
+        Host: ex.sue.x10.mx
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/52.0.2743.116 Safari/537.36
+      path: "/Telegram\U0001F1E8\U0001F1F3"
+    xudp: true
+    servername: ex.sue.x10.mx
+  - name: "\U0001F1F3\U0001F1F1NL_3|15.6MB/s"
+    network: ws
+    port: 80
+    server: 188.114.98.6
+    type: vless
+    udp: true
+    uuid: 4751adcd-064b-493e-979b-b1c56c133cb4
+    ws-opts:
+      headers:
+        Host: steep-water-754d-ppal0333333333333333.finisal307.workers.dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/67.0.3396.87 Safari/537.36
+      path: /
+    xudp: true
+  - alpn:
+      - http/1.1
+    client-fingerprint: randomized
+    name: "\U0001F1F3\U0001F1F1NL_4|4.8MB/s"
+    network: ws
+    port: 443
+    server: visa.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 72ed83a8-ec33-4a36-8595-83cc77ce83b3
+    ws-opts:
+      headers:
+        Host: work-86a.pages.dev
         User-Agent: >-
           Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
           like Gecko) Chrome/5.0.342.1 Safari/533.2
       path: >-
-        /@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN
+        /hzwrfa95ue5btfoy?---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---/dnbultvses5wywdlcy5kzxysz29vzhzwbi1jzgmucgfnzxmuzgv2lgvwzwl1czmxnc5wywdlcy5kzxysywphec5jbg91zgzsyxjllmnvbsxwbwxtewf6zc5wywdlcy5kzxysbmwuc3bpcmfrby5jb20snzbgcvkwdkg5bc5haudhmy5pckcsd3d3lnnwzwvkdgvzdc5uzxqszw4uanbnzm9ybwf0lmlylgzhbi5qcgdmb3jtyxquaxisymxlc3mubmv0d29yayxob2wuanbnzm9ybwf0lmlylhvzys52axnhlmnvbq==
       early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
+      max-early-data: 2560
     xudp: true
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1NL_3|5.5MB/s"
-    password: QCXDxuDlTTMD7jtgHUjIoj
-    port: 8080
-    server: 45.158.171.146
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf
-    name: "\U0001F1F8\U0001F1ECSG_1|2.2MB/s"
-    obfs: plain
-    obfs-param: 45672222545.microsoft.com
-    password: bxsnucrgk6hfish
-    port: 1097
-    protocol: auth_aes128_sha1
-    protocol-param: '222545:TIvS2C'
-    server: yd-03.paofunlink.com
-    type: ssr
-    udp: true
-  - client-fingerprint: firefox
-    flow: xtls-rprx-vision
-    name: "\U0001F1FA\U0001F1F8US_3|3.3MB/s"
-    network: tcp
-    port: 10001
-    reality-opts:
-      public-key: T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4
-    server: 1002.952326.xyz
-    tls: true
-    type: vless
-    udp: true
-    uuid: baff1b4d-64d3-4d97-b9da-d6b2ba541624
-    servername: www.python.org
-  - name: "\U0001F1FA\U0001F1F8US_4|4.5MB/s"
-    network: ws
-    password: slch2024
-    port: 2096
-    server: 199.34.229.195
-    skip-cert-verify: false
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
-    ws-opts:
-      headers:
-        Host: ocost-dy.wmlefl.cc
-      path: /Telegram
-  - alterId: 1
-    cipher: auto
-    country: "\U0001F1FA\U0001F1F8 US"
-    h2-opts: {}
-    http-opts: {}
-    name: "\U0001F1E9\U0001F1EADE_4|4.1MB/s"
-    network: ws
-    port: 443
-    server: serkat.org
-    skip-cert-verify: true
-    tls: true
-    type: vmess
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    ws-opts:
-      path: /linkvws
-    servername: serkat.org
-  - alterId: 0
-    cipher: auto
-    country: "\U0001F3C1ZZ"
-    h2-opts: {}
-    http-opts: {}
-    name: "\U0001F1EC\U0001F1E7GB_3|5.6MB/s"
-    network: ws
-    port: 80
-    server: test2.flha.ru
-    skip-cert-verify: true
-    type: vmess
-    uuid: 15f62abf-8cc9-4598-8d57-e4df7b499a84
-    ws-opts:
-      headers:
-        HOST: test2.flha.ru
-        Host: test2.flha.ru
-      path: /15f62abf-8cc9-4598-8d57-e4df7b499a84-vmess
-    servername: test2.flha.ru
-  - cipher: chacha20-ietf-poly1305
-    name: ❓Other_1|2.1MB/s
-    password: e01d8b56-3c15-438a-a865-325d42b8ac64
-    port: 10096
-    server: 1.170.29.78
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf-poly1305
-    name: ❓Other_2|2.0MB/s
-    password: 068a81a9-8935-4483-b2e3-996459e0d555
-    port: 10123
-    server: 111.253.193.61
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F5\U0001F1F1PL_1|3.4MB/s"
-    password: qscavF5UviIL-8V-E4raBA
-    port: 2222
-    server: 2.59.163.104
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F9\U0001F1FCTW_1|3.2MB/s"
-    password: 9f62aed1-7c9c-4df8-bccb-6203f6e39c27
-    port: 10049
-    server: 36.234.103.236
-    type: ss
-    udp: true
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1EC\U0001F1E7GB_4|2.2MB/s"
-    password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
-    port: 40008
-    server: uk.fastsoonlink.com
-    type: ss
-    udp: true
+    servername: work-86a.pages.dev
   - client-fingerprint: chrome
-    name: "\U0001F1E9\U0001F1EADE_5|2.2MB/s"
-    network: tcp
-    port: 6666
-    reality-opts:
-      public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
-      short-id: b525ecd2fc
-    server: 188.68.53.100
-    tls: true
-    type: vless
-    udp: true
-    uuid: 0abf9050-c7be-464d-80af-24094c2b97de
-    xudp: true
-    servername: Tgju.org
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_5|2.1MB/s"
+    name: "\U0001F1FA\U0001F1F8US_3|2.1MB/s"
     network: ws
-    password: slch2024
-    port: 2096
-    server: 103.245.229.91
+    password: wb6368
+    port: 2087
+    server: 92.243.75.49
     skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
+    sni: hsdgbuys.pages.dev
     type: trojan
     udp: true
     ws-opts:
       headers:
         User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_6|2.7MB/s"
-    network: ws
-    password: slch2024
-    port: 2096
-    server: 104.129.166.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile
-          Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_7|2.4MB/s"
-    network: ws
-    password: slch2024
-    port: 2096
-    server: 104.238.70.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/67.0.3396.99 Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - client-fingerprint: chrome
-    name: "\U0001F1F3\U0001F1F1NL_4|4.3MB/s"
-    network: ws
-    password: trojan
-    port: 8443
-    server: 104.21.22.11
-    skip-cert-verify: false
-    sni: betashop.foz.rf.gd
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.102 Safari/537.36
       path: /
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_8|3.6MB/s"
+    name: "\U0001F1FA\U0001F1F8US_4|34.9MB/s"
     network: ws
-    password: slch2024
     port: 2096
-    server: 104.254.140.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
+    server: 104.18.14.201
+    tls: true
+    type: vless
     udp: true
+    uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
     ws-opts:
       headers:
+        Host: iamdt.pages.dev
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/41.0.2272.104 Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
+          Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+          Chrome/70.0.3538.102 Safari/537.36
+      path: /
+    xudp: true
+    servername: iamdt.pages.dev
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_9|2.6MB/s"
+    name: "\U0001F1FA\U0001F1F8US_5|15.6MB/s"
     network: ws
-    password: slch2024
     port: 2096
-    server: 109.176.239.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
+    server: 104.18.15.201
+    tls: true
+    type: vless
     udp: true
+    uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
     ws-opts:
       headers:
+        Host: iamdt.pages.dev
         User-Agent: >-
-          Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile
-          Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_10|7.2MB/s"
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/50.0.2661.102 Safari/537.36
+      path: /
+    xudp: true
+    servername: iamdt.pages.dev
+  - alpn:
+      - http/1.1
+    client-fingerprint: randomized
+    name: "\U0001F1FA\U0001F1F8US_6|3.8MB/s"
     network: ws
-    password: slch2024
-    port: 2096
-    server: 135.84.76.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
+    port: 443
+    server: 104.18.126.196
+    tls: true
+    type: vless
     udp: true
+    uuid: 43f3f527-af58-4fc3-9233-678bcffbd0f7
     ws-opts:
       headers:
+        Host: v2rayngghaviv2rayngghaviv2rayngghaviv2rayngghaviv2rayng.pages.dev
         User-Agent: >-
           Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/70.0.3538.67 Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_11|3.0MB/s"
-    network: ws
-    password: slch2024
-    port: 2096
-    server: 141.11.202.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.80 Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US_12|2.0MB/s"
-    network: ws
-    password: slch2024
-    port: 2096
-    server: 147.185.161.91
-    skip-cert-verify: true
-    sni: ocost-dy.wmlefl.cc
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile
-          Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /"
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
+          Gecko) Chrome/54.0.2840.71 Safari/537.36
+      path: /
+    xudp: true
+    servername: v2RaynGGHavIv2RAYNgghAVIV2rAyngGHaViV2rayNGGhAvIv2rAYnG.PagES.dev
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -979,4 +1014,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2025-09-14 09:14:06
+# 2025-09-15 09:14:31
