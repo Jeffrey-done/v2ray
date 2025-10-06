@@ -1,0 +1,10 @@
+BestClash 免费Clash代理
+更新频率: 每30分钟
+爬取时间: 2025-10-06 01:40:47
+来源: https://github.com/PuddinCat/BestClash
+
+GitHub 订阅链接:
+https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml
+
+国内镜像 订阅链接:
+https://ghfile.geekertao.top/https://github.com/PuddinCat/BestClash/blob/main/proxies.yaml
