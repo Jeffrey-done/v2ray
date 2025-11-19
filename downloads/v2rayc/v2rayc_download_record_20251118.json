@@ -1,0 +1,23 @@
+{
+  "date": "20251118",
+  "download_time": "2025-11-19 01:46:41",
+  "total_links": {
+    "clash": 5,
+    "v2ray": 5,
+    "singbox": 1
+  },
+  "downloaded_files": [
+    "v2rayc_clash_1_20251118.yaml",
+    "v2rayc_clash_2_20251118.yaml",
+    "v2rayc_clash_3_20251118.yaml",
+    "v2rayc_clash_4_20251118.yaml",
+    "v2rayc_clash_5_20251118.yaml",
+    "v2rayc_v2ray_1_20251118.txt",
+    "v2rayc_v2ray_2_20251118.txt",
+    "v2rayc_v2ray_3_20251118.txt",
+    "v2rayc_v2ray_4_20251118.txt",
+    "v2rayc_v2ray_5_20251118.txt",
+    "v2rayc_singbox_1_20251118.json"
+  ],
+  "success_rate": "11/11"
+}
