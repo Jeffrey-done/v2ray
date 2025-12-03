@@ -1,0 +1,16 @@
+标题: 日日更新节点永久订阅
+描述: 永久固定的订阅地址，国内优先使用镜像订阅
+爬取时间: 2025-12-03 01:49:40
+更新频率: 日更新
+
+Clash订阅链接:
+- https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+- 可用性: 可用
+
+V2Ray订阅链接:
+- https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub
+- 可用性: 可用
+
+国内镜像链接:
+- Clash镜像: https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+- V2Ray镜像: https://ghproxy.com/https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub
