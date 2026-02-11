@@ -1,7 +1,35 @@
 proxies:
+  - name: "\U0001F1ED\U0001F1F0HK_1|1.1MB/s"
+    password: BxceQaOe
+    port: 443
+    server: 203.198.123.162
+    skip-cert-verify: true
+    sni: t.me%2Fripaojiedian
+    type: trojan
+  - cipher: rc4-md5
+    name: "\U0001F1F8\U0001F1ECSG_1|1.3MB/s"
+    password: 14fFPrbezE3HDZzsMOr6
+    port: 8080
+    server: 68.183.227.4
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1F5\U0001F1F1PL_1|1.1MB/s"
+    password: f8f7aCzcPKbsF8p3
+    port: 989
+    server: 51.15.23.63
+    type: ss
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US_1|1.6MB/s"
+    port: 180
+    server: 82.198.246.97
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F1EB\U0001F1EEFI_1|1005KB/s"
+    name: "\U0001F1EB\U0001F1EEFI_1|2.8MB/s"
     port: 8443
     reality-opts:
       public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
@@ -12,28 +40,43 @@ proxies:
     uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
     network: tcp
     servername: images.apple.com
-  - cipher: aes-128-gcm
-    name: "\U0001F1FA\U0001F1F8US_1|2.5MB/s"
-    password: shadowsocks
+  - name: "\U0001F1FA\U0001F1F8US_2|1.1MB/s"
+    network: ws
+    password: 5196aae7-1479-4f3c-978b-68e74977b509
     port: 443
-    server: 37.19.198.236
-    type: ss
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: "\U0001F1F7\U0001F1FARU_1|2.4MB/s"
-    port: 443
-    reality-opts:
-      public-key: tYFlc_8tzrwDisZbxlHj06rw_YE154TVYeEBuwOQZHE
-      short-id: 8a6605e7
-    server: 45.139.26.213
+    server: mkouy.99890604.xyz
     skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: 8ff544c5-303c-46f4-80fe-8e8e166fd981
-    network: tcp
-    servername: www.yandex.ru
-  - name: "\U0001F1E9\U0001F1EADE_1|2.4MB/s"
+    sni: mkouy.99890604.xyz
+    type: trojan
+    ws-opts:
+      headers:
+        Host: mkouy.99890604.xyz
+      path: /%2FmSZVb4DmOGWZIKMBivnR3
+  - name: "\U0001F1FA\U0001F1F8US_3|1.6MB/s"
+    network: ws
+    password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    port: 443
+    server: gbnh.7777112.xyz
+    skip-cert-verify: false
+    sni: gbnh.7777112.xyz
+    type: trojan
+    ws-opts:
+      headers:
+        Host: gbnh.7777112.xyz
+      path: /%2F2cO5FH0xUmT9oqnbBhmKb8nOkg
+  - cipher: chacha20-ietf
+    name: "\U0001F1F8\U0001F1ECSG_2|1.6MB/s"
+    password: asd123456
+    port: 8388
+    server: 103.36.91.32
+    type: ss
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN_1|1014KB/s"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.131
+    type: ss
+  - name: "\U0001F1E9\U0001F1EADE_1|2.5MB/s"
     network: ws
     port: 80
     server: 104.18.32.47
@@ -45,61 +88,47 @@ proxies:
       headers:
         Host: EveRLaSTinG-fiNANcE439p1sxXHY.SPORtLAND.CompanY.
       path: /?ed
-  - alterId: 2
+  - alpn:
+      - ''
+    alterId: '0'
     cipher: auto
-    name: "\U0001F1FA\U0001F1F8US_2|2.0MB/s"
-    port: 30829
-    server: v29.hdacd.com
-    skip-cert-verify: true
-    tls: false
-    type: vmess
-    udp: true
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  - alterId: 2
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0HK_1|3.4MB/s"
+    name: "\U0001F1EB\U0001F1F7FR_1|2.0MB/s"
     network: ws
-    port: 80
-    server: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
+    port: 8080
+    server: 188.114.98.0
     skip-cert-verify: false
     tls: false
     type: vmess
-    uuid: dcbaee4d-2204-11ed-b659-f23c91cfbbc9
+    udp: true
+    uuid: nasnet
     ws-opts:
       headers:
-        Host: broadcastlv.chat.bilibili.com
-      path: /
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
+        Host: nasnet-162191099.sharghdaily.co
+      path: >-
+        /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
+    xudp: true
+  - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1EE\U0001F1F9IT_1|2.8MB/s"
-    network: ws
-    port: 8443
-    server: italy2.bluehorizonjournal.site
+    flow: xtls-rprx-vision
+    name: "\U0001F1E9\U0001F1EADE_2|2.1MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+      short-id: ''
+    server: deu672.lackerdeu.org
     tls: true
     type: vless
     udp: true
-    uuid: 811632c6-f03f-42e8-a2c6-a9457f23e2fa
-    ws-opts:
-      headers:
-        Host: italy2.bluehorizonjournal.site
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/50.0.2661.102 Safari/537.36
-      path: >-
-        /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
+    uuid: 127e3e52-0aad-46ec-a5b1-51b32e0de0b9
     xudp: true
-    servername: italy2.bluehorizonjournal.site
+    servername: www.fh-aachen.de
   - alterId: '0'
     cipher: auto
-    name: "\U0001F1E9\U0001F1EADE_2|2.2MB/s"
+    name: "\U0001F1E9\U0001F1EADE_3|2.4MB/s"
     network: ws
     port: 8080
-    server: tgju.org
+    server: digitalocean.com
     skip-cert-verify: false
     tls: false
     type: vmess
@@ -108,33 +137,10 @@ proxies:
     ws-opts:
       early-data-header-name: Sec-WebSocket-Protocol
       headers:
-        Host: nasnet-571296497.iranpress.co
+        Host: nasnet-571299667.rahavard365.co
       max-early-data: 2560
-      path: /nasnet/cdn
+      path: /NASNET/cdn
     xudp: true
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1NL_1|3.9MB/s"
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    port: 8080
-    server: 82.38.31.99
-    type: ss
-    udp: true
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: "\U0001F1EB\U0001F1EEFI_2|3.2MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: KkGxnE3A4EaG8C7JydHk46UMuCP-Hcpua6lna-TvIAI
-      short-id: eae3d03b0083f7af
-    server: fi.zeepo.ir
-    tls: true
-    type: vless
-    udp: true
-    uuid: 1133aa0c-46e4-132a-1ec2-35cfd4e88228
-    xudp: true
-    servername: refersion.com
   - client-fingerprint: chrome
     encryption: none
     flow: xtls-rprx-vision
@@ -142,7 +148,63 @@ proxies:
       headers: {}
       path:
         - /
-    name: "\U0001F1ED\U0001F1FAHU_1|2.4MB/s"
+    name: "\U0001F1F3\U0001F1F1NL_1|2.6MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
+      short-id: 8bcfe256cf216fd8
+    server: 91.84.113.114
+    tls: true
+    type: vless
+    udp: true
+    uuid: a44e0875-210f-4941-9062-89b6361a14c6
+    xudp: true
+    servername: apple.com
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1E9\U0001F1EADE_4|1.5MB/s"
+    network: ws
+    port: 2053
+    server: 188.114.98.0
+    tls: true
+    type: vless
+    udp: true
+    uuid: d7c862e5-e507-4dc8-8506-43d5d9de7387
+    ws-opts:
+      headers:
+        Host: azrping.melishekan.site
+        User-Agent: >-
+          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+          (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+      path: >-
+        /eyJqdW5rIjoidDZLaDRBMWhpIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    xudp: true
+    servername: AzRPiNG1.mEliSHeKaN.SItE
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F3\U0001F1F1NL_2|1.1MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+      short-id: d17bd238f23fba92
+    server: 51.250.0.147
+    tls: true
+    type: vless
+    udp: true
+    uuid: 4a7367c5-3c77-400d-b292-dd01a3a6ecbf
+    xudp: true
+    servername: ads.x5.ru
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1ED\U0001F1FAHU_1|2.3MB/s"
     network: tcp
     port: 443
     reality-opts:
@@ -156,227 +218,69 @@ proxies:
     xudp: true
     servername: yandex.ru
   - alpn:
-      - http/1.1
+      - ''
     alterId: '0'
     cipher: auto
-    name: "\U0001F1E9\U0001F1EADE_3|2.8MB/s"
+    name: "\U0001F1EB\U0001F1F7FR_2|2.4MB/s"
     network: ws
-    port: 80
-    server: de2c.buzzon.shop
+    port: 8080
+    server: tgju.org
     skip-cert-verify: false
     tls: false
     type: vmess
     udp: true
-    uuid: acadd87c-c8b4-4b6b-989b-64263e4d0329
+    uuid: nasnet
     ws-opts:
-      headers:
-        Host: de2c.buzzon.shop
-      path: /q4smKQlj08hW5NThds106
-    xudp: true
-    servername: de2c.buzzon.shop
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1E9\U0001F1EADE_4|2.9MB/s"
-    network: ws
-    port: 8443
-    server: 57.129.63.144
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    ws-opts:
-      headers:
-        Host: sni.111000.dynv6.net
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/48.0.2564.116 Safari/537.36
-      path: /
       early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: nasnet-162191099.sharghdaily.co
       max-early-data: 2560
-    xudp: true
-    servername: sni.111000.dynv6.net
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F7\U0001F1FARU_2|3.4MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
-      short-id: b8cf9578640a9edf
-    server: 185.39.206.226
-    tls: true
-    type: vless
-    udp: true
-    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
-    xudp: true
-    servername: eh.vk.com
-  - encryption: none
-    name: "\U0001F1E9\U0001F1EADE_5|2.5MB/s"
-    network: ws
-    port: 80
-    server: 104.18.32.47
-    type: vless
-    udp: true
-    uuid: a5712440-3cec-4a1b-82e8-767c54acd83a
-    ws-opts:
-      headers:
-        Host: authENTIC-cABinEtgqc4XfW2ud.spORTLAND.COmPAny.
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/52.0.2743.116 Safari/537.36
-      path: /?ed
+      path: /nasnet/cdn
     xudp: true
   - client-fingerprint: chrome
     encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F7\U0001F1FARU_3|2.5MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
-      short-id: b8cf9578640a9edf
-    server: 176.109.106.241
-    tls: true
-    type: vless
-    udp: true
-    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
-    xudp: true
-    servername: eh.vk.com
-  - client-fingerprint: chrome
-    encryption: none
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1E6\U0001F1EAAE_1|3.0MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: zjv3djnsCKDqP7zZFIrJ9ImzgdPE3zFMCYrOvdWqkEE
-      short-id: 06bf5b24acb9
-    server: usa.vpnspacev.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: f6a07f24-4059-4593-9feb-044a8760f46c
-    xudp: true
-    servername: vpnspacev.com
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1E9\U0001F1EADE_6|2.7MB/s"
-    network: ws
-    port: 443
-    server: 192.46.239.191
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    ws-opts:
-      headers:
-        Host: sni.111000.dynv6.net
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/70.0.3538.67 Safari/537.36
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: sni.111000.dynv6.net
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    name: "\U0001F1EB\U0001F1EEFI_3|2.7MB/s"
-    network: ws
-    port: 8443
-    server: ip.hamrahto.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 673b5b06-ceca-407b-968a-f5a112749506
-    ws-opts:
-      headers:
-        Host: hm222.mutee.com.tr
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.86 Safari/537.36
-      path: /
-    xudp: true
-    servername: hm222.mutee.com.tr
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F7\U0001F1FARU_4|2.8MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
-      short-id: a1b2c3d4
-    server: 51.250.70.196
-    tls: true
-    type: vless
-    udp: true
-    uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
-    xudp: true
-    servername: eh.vk.com
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1E9\U0001F1EADE_7|2.3MB/s"
+    name: "\U0001F1EB\U0001F1F7FR_3|2.6MB/s"
     network: ws
     port: 2083
-    server: 192.200.160.228
+    server: flowershopsalzburg.de
     tls: true
     type: vless
     udp: true
-    uuid: 9f846e5c-56f9-4670-8be2-5b00d2a107c0
+    uuid: d94b374a-9584-4a40-9b1d-3e697b5551f4
     ws-opts:
       headers:
-        Host: de.elterido.ir
+        Host: flowershopsalzburg.de
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/70.0.3538.67 Safari/537.36
-      path: /api03
+          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+          (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+      path: /vlessws
     xudp: true
-    servername: de.elterido.ir
-  - client-fingerprint: chrome
+    servername: flowershopsalzburg.de
+  - alpn:
+      - http/1.1
+    client-fingerprint: firefox
     encryption: none
-    name: "\U0001F1F3\U0001F1F1NL_2|3.3MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: DbZWMfQTZQQrOJDgnWetu1ChTlXISZWKt4Kn_G0YyUI
-      short-id: ''
-    server: 43.250.54.175
+    name: "\U0001F1F3\U0001F1F1NL_3|2.5MB/s"
+    network: ws
+    port: 2083
+    server: 5.255.114.61
     tls: true
     type: vless
     udp: true
-    uuid: ed6dd416-1339-4dbe-8562-c9786d41041b
+    uuid: b658a9a6-f8f5-4a86-a438-f912a8509db2
+    ws-opts:
+      headers:
+        Host: native.loveplus.de5.net
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/70.0.3538.102 Safari/537.36
+      path: /ehueueuejs
     xudp: true
-    servername: fonts.gstatic.com
+    servername: native.loveplus.de5.net
   - client-fingerprint: chrome
     encryption: none
     flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F5\U0001F1F1PL_1|2.1MB/s"
+    name: "\U0001F1F5\U0001F1F1PL_2|2.6MB/s"
     network: tcp
     port: 51102
     reality-opts:
@@ -389,28 +293,21 @@ proxies:
     uuid: e8accc46-c511-42fb-919b-9283799a88a1
     xudp: true
     servername: yandex.ru
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
+  - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1E9\U0001F1EADE_8|3.2MB/s"
-    network: ws
-    port: 2053
-    server: 104.24.196.20
+    name: "\U0001F1F5\U0001F1F1PL_3|2.1MB/s"
+    network: tcp
+    port: 4443
+    reality-opts:
+      public-key: '-kDgSQgouE56cqDIDwgCco1LNQ-8q61WllL5egDI0yI'
+      short-id: '6670'
+    server: 37.139.42.234
     tls: true
     type: vless
     udp: true
-    uuid: c3ffa4ee-fbbe-45e3-f737-db2f381f557e
-    ws-opts:
-      headers:
-        Host: kh2tiyozkxybazdibomyhih.mahdi383ir.website
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/41.0.2272.101 Safari/537.36
-      path: /
+    uuid: 9cb2d5c5-c5e0-409b-ad3b-7c057b7971b1
     xudp: true
-    servername: kh2tiyozkxybazdibomyhih.mahdi383ir.website
+    servername: yandex.ru
   - client-fingerprint: chrome
     encryption: none
     flow: xtls-rprx-vision
@@ -418,7 +315,7 @@ proxies:
       headers: {}
       path:
         - /
-    name: "\U0001F1ED\U0001F1FAHU_2|2.1MB/s"
+    name: "\U0001F1ED\U0001F1FAHU_2|2.0MB/s"
     network: tcp
     port: 8443
     reality-opts:
@@ -431,105 +328,131 @@ proxies:
     uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
     xudp: true
     servername: yandex.ru
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1E9\U0001F1EADE_5|1.3MB/s"
+    network: ws
+    port: 2053
+    server: 104.16.202.106
+    tls: true
+    type: vless
+    udp: true
+    uuid: 6b47700e-0784-4737-ab49-a47c6ad1425b
+    ws-opts:
+      headers:
+        Host: wt.v2sub.sbs
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/56.0.2924.87 Safari/537.36
+      path: /WioNjdhwowoHsiwow
+    xudp: true
+    servername: wt1.v2sub.sbs
+  - client-fingerprint: chrome
+    encryption: none
+    grpc-opts:
+      grpc-service-name: grpc
+    name: "\U0001F1F7\U0001F1FARU_1|2.6MB/s"
+    network: grpc
+    port: 443
+    reality-opts:
+      public-key: 4NjqiB_FliKff9bP2ASI3WWuhfuyviPeKoz1DyZJQDE
+      short-id: 574aa52c
+    server: 185.86.144.32
+    tls: true
+    type: vless
+    udp: true
+    uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
+    xudp: true
+    servername: www.vk.com
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE_6|1.1MB/s"
+    network: tcp
+    port: 443
+    server: 20.79.162.37
+    tls: true
+    type: vless
+    udp: true
+    uuid: jina
+    xudp: true
+    servername: jina-207916237-direct.yektanet.co
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1ED\U0001F1FAHU_3|2.2MB/s"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 8ba12e75110b7a9c
+    server: 84.23.52.70
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    xudp: true
+    servername: m.vk.ru
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    name: "\U0001F1F3\U0001F1F1NL_4|2.1MB/s"
+    network: tcp
+    port: 443
+    server: usa69.openbypass.org
+    tls: true
+    type: vless
+    udp: true
+    uuid: 93741b49-1a11-4882-b02f-10fb78bf0d22
+    xudp: true
+    servername: usa69.openbypass.org
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1F5\U0001F1F1PL_4|2.4MB/s"
+    network: tcp
+    port: 8443
+    reality-opts:
+      public-key: a1xQOijfR3NuJRVfCNfNr4YMdcb7eqsKpvhuv-Gs9l8
+      short-id: '6670'
+    server: 37.139.42.234
+    tls: true
+    type: vless
+    udp: true
+    uuid: 8def6a24-8bd8-4e7d-82ec-938412cae499
+    xudp: true
+    servername: www.vk.com
   - alpn:
       - http/1.1
     client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1E9\U0001F1EADE_9|2.4MB/s"
+    name: "\U0001F1E9\U0001F1EADE_7|1.0MB/s"
     network: ws
     port: 443
-    server: de2c.buzzon.shop
+    server: 172.67.213.180
     tls: true
     type: vless
     udp: true
-    uuid: acadd87c-c8b4-4b6b-989b-64263e4d0329
+    uuid: c4b3fb2b-6ea0-4825-82d0-e315a0898f46
     ws-opts:
       headers:
-        Host: de2c.buzzon.shop
+        Host: dec.ketabv.ir
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/59.0.3071.115 Safari/537.36
-      path: /aRzHt7ShW5NThds106
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/41.0.2272.101 Safari/537.36
+      path: /sy5RZsmo3iYVIROnda
     xudp: true
-    servername: de2c.buzzon.shop
-  - encryption: none
-    name: "\U0001F1F3\U0001F1F1NL_3|2.3MB/s"
-    network: ws
-    port: 80
-    server: 104.18.32.47
-    type: vless
-    udp: true
-    uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
-    ws-opts:
-      headers:
-        Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /?ed
-    xudp: true
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: firefox
-    name: "\U0001F1E9\U0001F1EADE_10|2.2MB/s"
-    network: ws
-    port: 8443
-    server: cf.mahdi383ir.website
-    tls: true
-    type: vless
-    udp: true
-    uuid: 8edf51a7-a211-428d-9685-e6c71959ab9f
-    ws-opts:
-      headers:
-        Host: kh2tiyozkxybazdibomyhih.mahdi383ir.website
-        User-Agent: >-
-          Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko)
-          Chrome/11.0.696.3 Safari/534.24
-      path: /
-    xudp: true
-    servername: kh2tiyozkxybazdibomyhih.mahdi383ir.website
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1EB\U0001F1EEFI_4|2.3MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: X6M54TjT_X10PF8zMBxr_m4Djoyy_m4nhP28o-lGKy8
-      short-id: cf563330b1a8ef60
-    server: 62.60.229.32
-    tls: true
-    type: vless
-    udp: true
-    uuid: e3379093-7c89-4c8a-be1f-abb92a3305a1
-    xudp: true
-    servername: web.max.ru
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F7\U0001F1FARU_5|2.8MB/s"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: sbvKAdRy_0h33iRxgGwHAD1HC62WGwlkWwj0S5ptJEU
-      short-id: 9c2378562188c3cb
-    server: 212.113.123.230
-    tls: true
-    type: vless
-    udp: true
-    uuid: e4f5077b-3628-450c-92f9-b129b8a641a7
-    xudp: true
-    servername: ru.denditop.site
+    servername: dec.ketabv.ir
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
@@ -1068,4 +991,4 @@ rules:
   - "RULE-SET,Download,\U0001F3AF 全球直连"
   - "GEOIP,CN,\U0001F3AF 全球直连"
   - "MATCH,\U0001F41F 漏网之鱼"
-# 2026-02-10 10:04:55
+# 2026-02-11 10:00:38
